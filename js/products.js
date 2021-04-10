@@ -3,7 +3,7 @@ window.addEventListener("load", loadProducts);
 
 function loadProducts(){
   //Haal met JQUERY de json op
-  $.getJSON("/api/Product", function(data){//Callback na het ophalen van de data met als argument de opgehaalde data
+  $.getJSON("/api/product/list.php", function(data){//Callback na het ophalen van de data met als argument de opgehaalde data
     let parent = document.querySelector("#products"); //Element waar zij in moeten
     parent.innerHTML = ""; //Empty het element zodat loading weg gaat
     
