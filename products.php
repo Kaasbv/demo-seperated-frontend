@@ -11,8 +11,8 @@
   <body>
     <!-- Laad the header in -->
     <?php include("header.php") ?> 
-    <!-- Ul element om bij laden producten in te tonen -->
-    <ul id="products">Loading...</ul>
+    <!-- Ul element om bij laden producten in te tonen --> 
+    <ul id="products">Loadingggg...</ul>
     <!-- Laad the footer in -->
     <?php include("footer.php") ?> 
   </body>
