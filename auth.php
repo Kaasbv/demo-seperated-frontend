@@ -13,25 +13,25 @@
     
   </head>
   <body>
-    <div class = "body">
-      <h1 class = "G">G.</h1>
-        <div id = "LoginForm">   
-          <form id = "login" name="Login"  onsubmit = "PostLogin(event)">  
+    <div class="body">
+      <h1 class="G">G.</h1>
+        <div id="LoginForm">   
+          <form id="login" name="Login" onsubmit="PostLogin(event)">  
             <p>  
-              <input type = "text" id ="user" name  = "email" placeholder = "E-mailadress"/>  
+              <input type="text" id="user" name="email" placeholder="E-mailadress"/>  
             </p>  
             <p>  
-              <input type = "password" id ="password" name  = "password" placeholder = "Password"/>  
+              <input type="password" id="password" name="password" placeholder="Password"/>  
             </p>
-            <span id = "ErrorReturn"></span>  
+            <span id="ErrorReturn"></span>  
             <p>     
-              <input type =  "submit" id = "LoginBtn" value = "Login" />  
+              <input type="submit" id="LoginBtn" value="Login" />  
             </p>
           </form> 
-          <div class = "CreateOrRegister">
-            <a id = "Create" href="url">Create an account</a>
+          <div class="CreateOrRegister">
+            <a id="Create" href="url">Create an account</a>
             <br>
-            <a id = "ForgotPassword" href="url">Forgot Password? </a>	
+            <a id="ForgotPassword" href="url">Forgot Password? </a>	
           </div> 
         </div>
     </div>
