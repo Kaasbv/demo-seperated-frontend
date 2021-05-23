@@ -15,17 +15,11 @@
   <body>
     <div class="container">
       <h1 class="G">G.</h1>  
-          <form id="login"onsubmit="postLogin(event)">  
-            <p>  
-              <input type="text" id="user" name="email" placeholder="E-mailadress"/>  
-            </p>  
-            <p>  
-              <input type="password" id="password" name="password" placeholder="Password"/>  
-            </p>
+          <form id="login" onsubmit="postLogin(event)">   
+            <input type="text" name="email" placeholder="E-mailadress"/>  
+            <input type="password" name="password" placeholder="Password"/>  
             <span id="errorReturn"></span>  
-            <p>     
-              <input type="submit" id="loginBtn" value="Login" />  
-            </p>
+            <input type="submit" id="loginBtn" value="Login" />  
           </form> 
           <div class="createOrRegister">
             <a href="url">Create an account</a>

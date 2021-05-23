@@ -22,20 +22,17 @@ body {
     text-align: center;
 }
 
-#user , #password {
+#login > input {
     width: 92%;
     border-radius: 10px;
     background: rgba(118, 118, 128, 0.12);
     height: 43px;
     border-width: 0px;
     padding-left: 20px;
-}
-
-#password {
     margin-top: 30px;
 }
 
-#loginBtn {
+input#loginBtn {
     float: right;
     background: #0877E6;
     border-radius: 14px;
