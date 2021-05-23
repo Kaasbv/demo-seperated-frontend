@@ -2,7 +2,7 @@ body {
     background-color: #F3FCFF;
 }
 
-.body {
+.container {
     position: relative;
     margin: 10%;
     margin-top: 20%;
@@ -16,12 +16,10 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
-#LoginForm {
-    text-align: center;
-}
 
 #login {
     height: 35vh;
+    text-align: center;
 }
 
 #user , #password {
@@ -37,7 +35,7 @@ body {
     margin-top: 30px;
 }
 
-#LoginBtn {
+#loginBtn {
     float: right;
     background: #0877E6;
     border-radius: 14px;
@@ -48,18 +46,18 @@ body {
     margin-top: 20px;
 }
 
-.CreateOrRegister {
+.createOrRegister {
     position: relative;
     float: right;
     margin-top: 5%;
 }
 
-#ForgotPassword {
+#forgotPassword {
     position: relative;
     top: 40px;
 }
 
-#ErrorReturn {
+#errorReturn {
     color: red;
 }
 
