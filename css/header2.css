@@ -5,7 +5,11 @@
 }
 
 h1{
-    margin-right: 50%;
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 ul,li {
@@ -47,6 +51,10 @@ body {
     transform: translateX(-100%);
     opacity: 0;
     color: #70EE9C;
+}
+
+.navbar a {
+    float: right;
 }
 
 .nav.show {

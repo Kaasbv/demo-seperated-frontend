@@ -5,6 +5,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/header2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
 </head>
 <body>
@@ -23,8 +24,8 @@
       <span id="js-center-line" class="center-line"></span>
       <span id="js-bottom-line" class="bottom-line"></span>
     </button>
-  <h1>GOALR.</h1></header>
-  
+  <h1>GOALR.</h1>
+  <a href="/auth.php"><img src="images/login.png"></a>
   <script src="js/header2.js"></script>
 </body>
 </html>
