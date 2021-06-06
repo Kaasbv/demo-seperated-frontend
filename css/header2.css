@@ -4,14 +4,6 @@
     font-family: 'Changa One', cursive;
 }
 
-h1{
-    position: absolute;
-    top: 9%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-
 ul,li {
     margin: 0;
     padding: 0;
@@ -39,6 +31,13 @@ body {
     padding: 10px 20px;
     color: #70EE9C;
 }
+.header h1{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
 
 .nav {
     background: #D0F3FE;
@@ -53,8 +52,14 @@ body {
     color: #70EE9C;
 }
 
-.navbar a {
+.header a {
     float: right;
+}
+
+.header img {
+    width: 64px;
+    height: 64px;
+    border-radius: 64px;
 }
 
 .nav.show {

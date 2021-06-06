@@ -24,8 +24,9 @@
       <span id="js-center-line" class="center-line"></span>
       <span id="js-bottom-line" class="bottom-line"></span>
     </button>
-  <h1>GOALR.</h1>
-  <a href="/auth.php"><img src="images/login.png"></a>
+    <h1>GOALR.</h1>
+    <a href="/auth.php"><img src="images/login.png" size=200%></a>
+  </header>
   <script src="js/header2.js"></script>
 </body>
 </html>
