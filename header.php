@@ -2,24 +2,31 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/header.css">
-<script src="js/header.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
 </head>
 <body>
-<div class="mobilecontainer">
-  	<div class="nav">
-      <a href="#home" class="active">GOALR.</a>
-      <div id="Gmenu">
-      <a href="#menu1">Menu 1</a>
-      <a href="#menu2">Menu 2</a>
-      <a href="#menu3">Menu 3</a>
-    </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <span></span>
-      <span></span>
-      <span></span>
-      </a>
-    </div>
-</div>
+  <header class="header">
+    <nav id="js-nav" class="nav">
+      <ul class="list">
+        <li>Menu Item 1</li>
+        <li>Menu Item 2</li>
+        <li>Menu Item 3</li>
+        <li>Menu Item 4</li>
+        <li>Menu Item 5</li>
+      </ul>
+    </nav>
+    <button id="js-hamburger" class="hamburger" type="button">
+      <span id="js-top-line" class="top-line"></span>
+      <span id="js-center-line" class="center-line"></span>
+      <span id="js-bottom-line" class="bottom-line"></span>
+    </button>
+    <h1>GOALR.</h1>
+    <a href="/auth.php"><img src="images/login.png" size=200%></a>
+  </header>
+  <script src="js/header.js"></script>
 </body>
 </html>

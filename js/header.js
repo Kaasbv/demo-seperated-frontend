@@ -1,8 +1,4 @@
-function myFunction() {
-    var x = document.getElementById("Gmenu");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
+document.querySelector("#js-hamburger").addEventListener("click", function(){
+  document.querySelector("#js-hamburger").classList.toggle("active");
+  document.querySelector("#js-nav").classList.toggle("show");
+});
