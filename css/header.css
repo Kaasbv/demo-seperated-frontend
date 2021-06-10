@@ -1,123 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Changa One', cursive;
-}
-
-ul,li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-button {
-    background: none;
-    border: none;
-    appearance: none;
-    outline: none;
-    padding: 0;
-    cursor: pointer;
+  margin: 0;
+  padding: 0;
+  font-family: 'Changa One', cursive;
 }
 
 body {
     background: #F3FCFF;
 }
 
-.header {
-    background: rgba(163, 231, 252, 0.45);
-    display: flex;
-    align-items: center;
-    height: 80px;
-    padding: 10px 20px;
-    color: #70EE9C;
+header {
+  background: rgba(163, 231, 252, 0.45);
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 10px 20px;
+  color: #70EE9C;
 }
 
-.header h1{
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+header h1{
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
 
-.nav {
-    background: #D0F3FE;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 100vh;
-    transition: transform 0.7s, opacity 1s;
-    transform: translateX(-100%);
-    opacity: 0;
-    color: #70EE9C;
+nav {
+  background: #D0F3FE;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  transition: transform 0.7s, opacity 1s;
+  transform: translateX(-100%);
+  opacity: 0;
+  color: #70EE9C;
 }
 
-.header a {
-    float: right;
+header a {
+  float: right;
 }
 
-.header img {
-    width: 44px;
-    height: 44px;
-    border-radius: 64px;
+header img {
+  width: 44px;
+  height: 44px;
+  border-radius: 64px;
 }
 
-.nav.show {
-    transform: translateX(0%);
-    opacity: 1;
+nav.show {
+  transform: translateX(0%);
+  opacity: 1;
 }
 
-.list {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25%;
-    align-items: center;
-    height: inherit;
+nav > ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25%;
+  align-items: center;
+  height: inherit;
+  list-style: none;
 }
 
-.list li {
-    margin: 1.5rem auto;
-    font-size: 1.25rem;
+nav > ul > li {
+  margin: 1.5rem auto;
+  font-size: 1.25rem;
 }
 
-.hamburger {
-    position: relative;
-    margin-right: auto;
-    width: 45px;
-    height: 35px;
-    z-index: 1;
+#hamburger {
+  position: relative;
+  margin-right: auto;
+  width: 45px;
+  height: 35px;
+  z-index: 1;
+  cursor: pointer;
 }
 
-.hamburger span {
-    position: absolute;
-    right: 0;
-    background: #70EE9C;
-    width: inherit;
-    height: 5px;
-    transition: transform 0.5s, opacity 0.5s;
+#hamburger span {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  background: #70EE9C;
+  height: 5px;
+  transition: transform 0.5s, opacity 0.5s ease-in-out;
 }
 
-.top-line {
-    top: 0px;
+#hamburger.active > span:nth-child(1){
+  transform: translateY(15px) rotate(-45deg);
 }
 
-.center-line {
-    top: 15px;
+#hamburger.active > span:nth-child(2){
+  opacity: 0;
 }
 
-.bottom-line {
-    bottom: 0px;
-}
-
-#js-hamburger.active > span:nth-child(1){
-    transform: translateY(15px) rotate(-45deg);
-}
-
-#js-hamburger.active > span:nth-child(2){
-    opacity: 0;
-}
-
-#js-hamburger.active > span:nth-child(3){
-    transform: translateY(-15px) rotate(45deg);
+#hamburger.active > span:nth-child(3){
+  transform: translateY(-15px) rotate(45deg);
 }
