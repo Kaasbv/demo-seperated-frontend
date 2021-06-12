@@ -1,39 +1,34 @@
-window.addEventListener("load", init);
+window.addEventListener("load", getGoals);
 
 
 var goals = [];
 var currentGoal = 1;
-var prev = [0];
+var previousGoals = [];
 
 
-function init(){
-  getGoals();
-}
 
 function getGoals(){
   $.getJSON("/api/goal/list.php?parent_id="+ currentGoal, function( data ) {
     goals = data;
-    console.log(currentGoal);
-    console.log(prev);
     epicOrGoal();
     renderHtml();
   }).fail(function(){
-    console.log("Failed");
+    window.location.replace("/auth.php");
   });
 }
 
 function epicOrGoal(){
     let container = document.querySelector("#header");
     let bar = document.querySelector("#editBar");
-    let buttonDiv = document.querySelector("#backButton");
-    let check = prev[prev.length - 1];
+    let backButton = document.querySelector("#backButton");
+    let lastGoal = previousGoals[previousGoals.length - 1];
     
     let htmlBar = "";
     let html = "";
     let htmlButton = "";
 
 
-    if (prev == 0){
+    if (previousGoals.length ==- 0){
       html +=`<h1> Epics. </h1>`;
       htmlBar += `<span class ="addGoals">add Epic</span>`;
     }
@@ -41,7 +36,7 @@ function epicOrGoal(){
       htmlButton += `<img src ="images/icons/arrow-left.svg" onclick="clickBack(event)">`;
       html += `<h1> Goals. </h1>`;
 
-      if (check == 1 ) {
+      if (lastGoal == 1 ) {
         htmlBar += `
         <span class ="editEpics">edit Epic</span>
         <span class ="addGoals">add Goal</span>
@@ -55,7 +50,7 @@ function epicOrGoal(){
       }
     }
 
-    buttonDiv.innerHTML = htmlButton;
+    backButton.innerHTML = htmlButton;
     bar.innerHTML = htmlBar;
     container.innerHTML = html;
     
@@ -69,8 +64,7 @@ function renderHtml(){
   let html = "";
 
   for(let goal of goals){
-    Id = goal.ID_goal;
-    parentId = goal.parent_goal_id;
+    let Id = goal.ID_goal;
 
       if ( currentGoal != 1) {
         html += `
@@ -97,12 +91,12 @@ function renderHtml(){
 
 function clickgoal(e){
   let element = e.currentTarget;
-  prev.push(currentGoal);
+  previousGoals.push(currentGoal);
   currentGoal = element.dataset.id;
   getGoals();
 }
 
 function clickBack(e){
-  currentGoal = prev.pop();
+  currentGoal = previousGoals.pop();
   getGoals();
 }
