@@ -4,6 +4,6 @@ function postLogin(event) {
 		window.location.replace("main.php");
 	})
 	.fail(function() { 
-		document.getElementById("ErrorReturn").innerHTML = "Verkeerd gebruikersnaam of wachtwoord";
- })
+		document.getElementById("error").innerHTML = "Verkeerd gebruikersnaam of wachtwoord";
+	})
 }

@@ -53,7 +53,6 @@ function epicOrGoal(){
     backButton.innerHTML = htmlButton;
     bar.innerHTML = htmlBar;
     container.innerHTML = html;
-    
 }
 
 
@@ -63,30 +62,33 @@ function renderHtml(){
 
   let html = "";
 
-  for(let goal of goals){
-    let Id = goal.ID_goal;
-
-      if ( currentGoal != 1) {
-        html += `
-        <div id="goalBox" data-id =${Id} onclick="clickgoal(event)">
-        <span class ="goalName">${goal.name}</span>
-        <span class ="dueDate">apr</span>
-        </div>
-        `;
-      }
-      else {
-        html += `
-        <div id="epicBox" data-id ="${Id}"  onclick="clickgoal(event)">
-          <span class ="epicName">${goal.name}</span>
-          <span class ="epicScore">300</span>
-          <div class ="progressBar" ></div>
-        </div>
-        `;
-      }
+  if(goals.length === 0){
+    html = "<span>Geen goals gevonden.</span>";
+  }else{
+    for(let goal of goals){
+      let Id = goal.ID_goal;
+  
+        if ( currentGoal != 1) {
+          html += `
+          <div id="goalBox" data-id =${Id} onclick="clickgoal(event)">
+          <span class ="goalName">${goal.name}</span>
+          <span class ="dueDate">apr</span>
+          </div>
+          `;
+        }
+        else {
+          html += `
+          <div id="epicBox" data-id ="${Id}"  onclick="clickgoal(event)">
+            <span class ="epicName">${goal.name}</span>
+            <span class ="epicScore">300</span>
+            <div class ="progressBar" ></div>
+          </div>
+          `;
+        }
+    }
   }
 
   container.innerHTML = html;
-
 }
 
 function clickgoal(e){
