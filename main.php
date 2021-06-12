@@ -26,7 +26,7 @@
       
 
       <div class ="attributeBox">
-        <form id="login" onsubmit="postLogin(event)">
+        <form id="addGoalForm" onsubmit="postLogin(event)">
           <label for="goalName">Naam goal</label>   
           <input type="text" name="goalName" placeholder="Naam van het goal"/> 
           <label for="type">Goal type</label> 

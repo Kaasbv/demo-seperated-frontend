@@ -138,23 +138,23 @@ main {
   background-color: lightpink;
 }
 
-form {
+#addGoalForm {
   text-align: center;
   margin-top: 10%;
 }
 
-label {
+#addGoalForm > label {
   width: 20%;
 }
 
-select, input {
+#addGoalForm > select, input {
   text-align: center;
   left: 40%;
   display: inline-block;
   width: 80%;
   margin-left:10%;
   margin-right:10%;
-  margin-bottom:4%;
+  margin-bottom:10%;
   font-family: 'Changa One', cursive;
   margin: 0;
   padding: 0;
