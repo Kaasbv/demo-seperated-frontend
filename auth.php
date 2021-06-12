@@ -16,7 +16,7 @@
     <div class="container">
       <h1 class="G">G.</h1>  
           <form id="login" onsubmit="postLogin(event)">   
-            <input type="text" name="email" placeholder="E-mailadress lol"/>  
+            <input type="text" name="email" placeholder="E-mailadress"/>  
             <input type="password" name="password" placeholder="Password"/>  
             <span id="error"></span>  
             <input type="submit" id="loginBtn" value="Login" />  
