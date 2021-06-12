@@ -1,99 +1,162 @@
-body {
+#editBar {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px 0px 20px;
+}
+
+.editEpics{
+  float: left;
+}
+
+.addGoals{ 
+  float: right;
+}
+
+main {
+  margin: 5%;
+  position: relative;
+  height: 80vh;
+}
+
+#header > h1 {
+  color: #FF5A5F;
+  margin:15%;
+  margin-top: 10%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#goalBox {
+  position: relative;
+  display: block;
+  padding-left: 5%;
+  height: 5vh;
+  padding-top: 1vh;
+  margin-bottom: 5%;
+
+  background: rgba(164, 198, 252, 0.3);
+  border: 1px solid #A4C6FC;
+  box-sizing: border-box;
+  border-radius: 14px;
+  width: 100%;
+}
+
+.goalName, .epicName {
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+}
+
+.epicName, .epicScore {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.35px;
+}
+
+.dueDate, .epicScore {
+  float: right;
+  padding-right: 5%;
+}
+
+#goals > span {
+  margin-left: 20px;
+}
+
+#epicBox {
+  position: relative;
+  background: rgba(164, 164, 252, 0.3);
+  border: 1px solid #A4A4FC;
+  box-sizing: border-box;
+  border-radius: 14px;
+  height: 8vh;
+  padding-top: 2vh;
+  margin-top: 7%;
+  padding-left: 5%;
+  z-index: 0;
+}
+
+.progressBar {
+  position: absolute;
+  background-color: rgba(164, 164, 252, 0.3);
+  border-radius: 14px;
+  width: 50%;
+  height: 100%;
+  display: block;
+  float: left;
+  padding-left: 0px;
+  left:0;
+  top:0;
+
+}
+
+.attributeBox {
+  position: fixed;
+  height: 40vh;
+  z-index: 10;
+  background-color: lightgrey;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: none;
+}
+
+.attributeBox > label {
+  display: inline-block;
+  width: 100%;
+  padding-left: 20px;
+  padding-top:20px;
+}
+.colorBox {
+  background-color: grey;
+  margin: 20px;
+  padding-left: 20px;
+}
+
+.colorBox > input {
+  margin:10px;
+  border-radius: 50%;
+  height:20px;
+  width: 20px;
+}
+
+.sample {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  position: relative;
+  border: 1px solid #DDD;
+  float: left;
+  transition: all 0.2s;
+  background-color: lightpink;
+}
+
+#addGoalForm {
+  text-align: center;
+  margin-top: 10%;
+}
+
+#addGoalForm > label {
+  width: 20%;
+}
+
+#addGoalForm > select, input {
+  text-align: center;
+  left: 40%;
+  display: inline-block;
+  width: 80%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom:10%;
   font-family: 'Changa One', cursive;
   margin: 0;
   padding: 0;
   background: #F3FCFF;
-}
-
-header {
-  background: rgba(163, 231, 252, 0.45);
-  display: flex;
-  align-items: center;
-  height: 80px;
-  padding: 10px 20px;
-  color: #70EE9C;
-}
-
-header h1{
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0;
-}
-
-nav {
-  background: #D0F3FE;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 100vh;
-  transition: transform 0.7s, opacity 1s;
-  transform: translateX(-100%);
-  opacity: 0;
-  color: #70EE9C;
-  z-index: 1;
-}
-
-header a {
-  float: right;
-}
-
-header img {
-  width: 44px;
-  height: 44px;
-  border-radius: 64px;
-}
-
-nav.show {
-  transform: translateX(0%);
-  opacity: 1;
-}
-
-nav > ul {
-  display: flex;
-  flex-direction: column;
-  margin-top: 25%;
-  align-items: center;
-  height: inherit;
-  list-style: none;
-  padding-left: 0;
-}
-
-nav > ul > li {
-  margin: 1.5rem auto;
-  font-size: 1.25rem;
-}
-
-#hamburger {
-  position: relative;
-  margin-right: auto;
-  width: 45px;
-  height: 35px;
-  z-index: 1;
-  cursor: pointer;
-}
-
-#hamburger span {
-  position: relative;
-  display: block;
-  margin-bottom: 10px;
-  background: #70EE9C;
-  height: 5px;
-  transition: transform 0.5s, opacity 0.5s ease-in-out;
-}
-
-#hamburger.active > span:nth-child(1){
-  transform: translateY(15px) rotate(-45deg);
-}
-
-#hamburger.active > span:nth-child(2){
-  opacity: 0;
-}
-
-#hamburger.active > span:nth-child(3){
-  transform: translateY(-15px) rotate(45deg);
 }
