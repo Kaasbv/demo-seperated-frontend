@@ -5,6 +5,11 @@ class TranslationHelper {
   private static string $defaultLanguage = "en";
   private array $dictionary;
 
+  function loadJSData(){
+    $json = json_encode($this->dictionary);
+    echo "<script>var ts = JSON.parse('{$json}');</script>";
+  }
+
   function __construct()
   {
     //Grab language from cookie otherwise its english

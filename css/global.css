@@ -16,6 +16,7 @@ header {
   height: 80px;
   padding: 10px 20px;
   color: #70EE9C;
+  z-index: 10;
 }
 
 header h1{
