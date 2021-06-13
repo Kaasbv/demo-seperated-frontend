@@ -15,7 +15,7 @@
   <body>
     <div class="container">
       <h1 class="G">G.</h1>  
-          <form id="login" onsubmit="postLogin()">   
+          <form id="login" onsubmit="postLogin(event)">   
             <input type="text" name="email" placeholder="E-mailadress"/>  
             <input type="password" name="password" placeholder="Password"/>  
             <span id="error"></span>  
