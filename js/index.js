@@ -106,27 +106,27 @@ function clickBack(e){
 }
 
 function showAddGoal(){
-  var model = document.getElementById("addGoal");
-  var main = document.querySelector("#bodyCover");
+  var modal = document.getElementById("addGoal");
+  var bodyCover = document.querySelector("#bodyCover");
 
-  main.classList.toggle("bodyOff");
-  model.classList.toggle("addGoalContent");
+  bodyCover.classList.toggle("bodyOff");
+  modal.classList.toggle("addGoalContent");
   document.getElementById('parentId').value = currentGoal;
 
-    if (parseInt(model.style.maxHeight) !== 0 && model.style.maxHeight.length !== 0)  {
-        model.style.maxHeight = 0 + "px";
+    if (parseInt(modal.style.maxHeight) !== 0 && modal.style.maxHeight.length !== 0)  {
+        modal.style.maxHeight = 0 + "px";
     } else {
-        model.style.maxHeight = 400 + "px";
+        modal.style.maxHeight = 400 + "px";
     }
 }
 
 function removeAddScreen(){
   var body = document.querySelector("#bodyCover");
-  var model = document.getElementById("addGoal");
+  var modal = document.getElementById("addGoal");
 
-  model.classList.toggle("addGoalContent");
+  modal.classList.toggle("addGoalContent");
   body.classList.toggle("bodyOff");
-  model.style.maxHeight = 0;
+  modal.style.maxHeight = 0;
   document.getElementById("addGoalForm").reset();
 }
 
