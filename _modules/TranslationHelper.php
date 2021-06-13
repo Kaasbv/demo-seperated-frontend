@@ -2,7 +2,7 @@
 
 class TranslationHelper {
   private static string $translationPaths = __DIR__ . "/../_translations";
-  private static string $defaultLanguage = "ru";
+  private static string $defaultLanguage = "en";
   private array $dictionary;
 
   function loadJSData(){
