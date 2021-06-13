@@ -1,5 +1,21 @@
 {
   "logoutText": "Log out",
   "exampleH1": "Example",
-  "languageH1": "Select your language"
+  "languageH1": "Select your language",
+  "day":"Day",
+  "week":"Week",
+  "month":"Month",
+  "year":"Year",
+  "goalType":"Goal type",
+  "goalName":"Name of the goal",
+  "completeBefore":"Complete before",
+  "save":"Save",
+  "addEpic":"Add Epic",
+  "editEpic":"Edit Epic",
+  "addGoal":"Add Goal", 
+  "editGoal":"Edit Goal",
+  "goals":"Goals",
+  "noGoalsFound":"No goals found",
+  "epic":"Epics",
+  "dateFormat":"dd-mm-yyyy"
 }

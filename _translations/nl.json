@@ -1,5 +1,22 @@
 {
   "logoutText": "Uitloggen",
   "exampleH1": "Voorbeeld",
-  "languageH1": "Selecteer je taal"
+  "languageH1": "Selecteer je taal",
+  "day":"dag",
+  "week":"week",
+  "month":"maand",
+  "year":"jaar",
+  "goalType":"Goal type",
+  "goalName":"Naam van het goal",
+  "completeBefore":"voltooien voor",
+  "save":"Save",
+  "addEpic":"Epic toevoegen",
+  "editEpic":"Epic wijzigen",
+  "addGoal":"Goal toevoegen", 
+  "editGoal":"Goal Wijzigen",
+  "goals":"Goals",
+  "noGoalsFound":"Geen doelen gevonden",
+  "epic":"Epics",
+  "dateFormat":"dd-mm-jjjj"
+  
 }

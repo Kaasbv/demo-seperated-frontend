@@ -2,8 +2,13 @@
 
 class TranslationHelper {
   private static string $translationPaths = __DIR__ . "/../_translations";
-  private static string $defaultLanguage = "en";
+  private static string $defaultLanguage = "ru";
   private array $dictionary;
+
+  function loadJSData(){
+    $json = json_encode($this->dictionary);
+    echo "<script>var ts = JSON.parse('{$json}');</script>";
+  }
 
   function __construct()
   {
