@@ -1,0 +1,70 @@
+body {
+    background-color: #F3FCFF;
+}
+
+.container {
+    position: relative;
+    margin: 10%;
+    margin-top: 20%;
+}
+
+
+.G {
+    text-align: center;
+    font-size: 96px;
+    color: #70EE9C;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+
+#register {
+    height: 35vh;
+    text-align: center;
+}
+
+#register > input {
+    width: 92%;
+    border-radius: 10px;
+    background: rgba(118, 118, 128, 0.12);
+    height: 43px;
+    border-width: 0px;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+
+input#registerBtn {
+    float: right;
+    background: #0877E6;
+    border-radius: 14px;
+    width: 164px;
+    height: 43px;
+    border-width: 0px;
+    color:white;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.createOrRegister {
+    position: relative;
+    float: right;
+    margin-top: 5%;
+}
+
+#forgotPassword {
+    position: relative;
+    top: 40px;
+}
+
+#errorReturn {
+    color: red;
+}
+
+#agree {
+    float:left;
+    max-height: 20px;
+}
+#agreetext{
+    float:left;
+    font-size: 10px;
+}
