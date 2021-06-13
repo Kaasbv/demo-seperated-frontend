@@ -1,0 +1,76 @@
+#controls {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(163, 231, 252, 0.45);
+}
+
+#controls > .sideicon {
+  position: absolute;
+  right: 0px;
+  padding: 10px;
+}
+
+#datecontrols {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#datecontrols > span {
+  padding: 0px 20px 0px 20px;
+}
+
+i {
+  width: 1.5em;
+  height: 1.5em;
+  display: block;
+  background-size: contain;
+}
+
+#controls > .options {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 0px;
+  transition: height 1s ease-in-out;
+  background-color: #cff3fe;
+  margin-top: 15px;
+  z-index: 3000;
+}
+
+#controls > .options.open {
+  height: 120px;
+}
+
+#controls > .options > span {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.backicon {
+  background-image: url("/images/icons/arrow-left.svg");
+}
+
+.nexticon {
+  background-image: url("/images/icons/arrow-right.svg");
+}
+
+.selecticon {
+  background-image: url("/images/icons/arrow-down-left.svg");
+  transition: transform 1s ease-in-out;
+}
+
+.selecticon.active {
+  transform: rotate(90deg);
+}
+
+#goals {
+  margin: 5%;
+}

@@ -64,24 +64,23 @@ function renderHtml(){
   }else{
     for(let goal of goals){
       let Id = goal.ID_goal;
-  
-        if ( currentGoal != 1) {
-          html += `
-          <div id="goalBox" data-id =${Id} onclick="clickgoal(event)">
-          <span class ="goalName">${goal.name}</span>
-          <span class ="dueDate">apr</span>
-          </div>
-          `;
-        }
-        else {
-          html += `
-          <div id="epicBox" data-id ="${Id}"  onclick="clickgoal(event)">
-            <span class ="epicName">${goal.name}</span>
-            <span class ="epicScore">300</span>
-            <div class ="progressBar" ></div>
-          </div>
-          `;
-        }
+      let dateText = goal.type && goal.end_date ? grabDateValue(goal.type, goal.end_date) : "";
+      if ( currentGoal != 1) {
+        html += `
+        <div id="goalBox" data-id =${Id} onclick="clickgoal(event)">
+        <span class ="goalName">${goal.name}</span>
+        <span class ="dueDate">${dateText}</span>
+        </div>
+        `;
+      } else {
+        html += `
+        <div id="epicBox" data-id ="${Id}"  onclick="clickgoal(event)">
+          <span class ="epicName">${goal.name}</span>
+          <span class ="epicScore">300</span>
+          <div class ="progressBar" ></div>
+        </div>
+        `;
+      }
     }
   }
 
