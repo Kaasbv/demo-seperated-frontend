@@ -5,7 +5,6 @@ let type = "day";
 let startDate = dayjs().startOf('day');
 
 function init(){
-  dayjs.extend(dayjs_plugin_weekOfYear);
   addEvents();
   getGoals();
 }
@@ -64,22 +63,7 @@ function render(){
 
 function renderDate(){
   let element = document.querySelector("#datecontrols > span");
-  let value;
-  switch(type){
-    case "day":
-      value = startDate.format("DD-MM-YY");
-      break;
-    case "week":
-      value = "W" + startDate.week();
-      break;
-    case "month":
-      value = startDate.format("MMM YYYY");
-      break;
-    case "year":
-      value = startDate.format("YYYY");
-      break;
-  }
-  element.innerHTML = value;
+  element.innerHTML = grabDateValue(type, startDate);
 }
 
 function renderGoals(){
@@ -89,7 +73,6 @@ function renderGoals(){
     html += `
     <div id="goalBox" data-id =${goal.id} onclick="clickgoal(event)">
       <span class ="goalName">${goal.name}</span>
-      <span class ="dueDate">apr</span>
     </div>
     `
   }
