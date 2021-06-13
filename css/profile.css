@@ -1,0 +1,88 @@
+body {
+    background-color: #F3FCFF;
+    font-family: 'Changa One', cursive;
+}
+
+.container {
+    position: relative;
+    margin: 10%;
+    margin-top: 20%;
+}
+
+aside {
+    width: 25%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: none;
+}
+
+.avatar {
+    vertical-align: middle;
+    border-style: solid;
+    border-color: #70EE9C;
+    border-width: 2px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+.Profiel {
+    text-align: left;
+    color: #70EE9C;
+}
+
+.Password {
+    text-align: left;
+    color: #70EE9C;
+}
+
+label {
+    float: left;
+}
+  
+#profile {
+    height: 30vh;
+    text-align: center;
+}
+  
+#profile > input {
+    float: left;
+    width: 92%;
+    border-radius: 10px;
+    background: rgba(118, 118, 128, 0.12);
+    height: 43px;
+    border-width: 0px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#password {
+    height: 30vh;
+    text-align: center;
+}
+  
+#password > input {
+    float: left;
+    width: 92%;
+    border-radius: 10px;
+    background: rgba(118, 118, 128, 0.12);
+    height: 43px;
+    border-width: 0px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  
+input#saveBtn {
+    float: right;
+    background: #0877E6;
+    border-radius: 14px;
+    width: 164px;
+    height: 43px;
+    border-width: 0px;
+    color:white;
+    margin-top: 20px;
+}
