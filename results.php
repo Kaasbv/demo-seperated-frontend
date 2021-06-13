@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
   <head>    
-    <title>Calender</title>
+    <title>Results</title>
     <?php include_once(__DIR__ . "/include/globalhead.php") ?>
     <link rel="stylesheet" href="css/results.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
