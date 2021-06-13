@@ -106,40 +106,39 @@ function clickBack(e){
 }
 
 function showAddGoal(){
-  var addGoal = document.getElementById("attributeBox");
-  var main = document.querySelector("#cancelBody");
+  var model = document.getElementById("addGoal");
+  var main = document.querySelector("#bodyCover");
 
   main.classList.toggle("bodyOff");
-  addGoal.classList.toggle("attributeContent");
+  model.classList.toggle("addGoalContent");
   document.getElementById('parentId').value = currentGoal;
 
-    if (parseInt(addGoal.style.maxHeight) !== 0 && addGoal.style.maxHeight.length !== 0)  {
-        addGoal.style.maxHeight = 0 + "px";
+    if (parseInt(model.style.maxHeight) !== 0 && model.style.maxHeight.length !== 0)  {
+        model.style.maxHeight = 0 + "px";
     } else {
-        addGoal.style.maxHeight = 400 + "px";
+        model.style.maxHeight = 400 + "px";
     }
 }
 
 function removeAddScreen(){
-  var body = document.querySelector("#cancelBody");
-  var addGoal = document.getElementById("attributeBox");
+  var body = document.querySelector("#bodyCover");
+  var model = document.getElementById("addGoal");
 
-  addGoal.classList.toggle("attributeContent");
+  model.classList.toggle("addGoalContent");
   body.classList.toggle("bodyOff");
-  addGoal.style.maxHeight = 0;
+  model.style.maxHeight = 0;
   document.getElementById("addGoalForm").reset();
 }
 
 function CreateGoal(event) {
-	event.preventDefault();
+  event.preventDefault();
   document.getElementById('parentId').value = currentGoal;
-  console.log(currentGoal);
 	$.post("/api/goal/create.php", $("#addGoalForm").serialize() , function (data) {
     removeAddScreen();
     getGoals();
     document.getElementById("addGoalForm").reset();
-	})
-	.fail(function() { 
-		alert("data is not valid");
+  })
+  .fail(function() { 
+    alert("data is not valid");
 	})
 }

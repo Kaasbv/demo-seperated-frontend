@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/index.js"></script>
   </head>
-  <body><div id="cancelBody" onclick="removeAddScreen()"></div>
+  <body><div id="bodyCover" onclick="removeAddScreen()"></div>
     <?php include_once(__DIR__ . "/include/header.php") ?>
 
     <div id="editBar">
@@ -20,7 +20,7 @@
       <div id="backButton"></div>
       <div id="header"></div>
       <div id="goals"></div>
-      <div id="attributeBox">
+      <div id="addGoal">
         <form id="addGoalForm" onsubmit="CreateGoal(event)">
           <input id="goalName" type="text" name="name" placeholder="<?= $ts->goalName?>" required/>
           <div id="goalType">
