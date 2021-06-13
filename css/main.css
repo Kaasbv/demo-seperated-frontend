@@ -1,15 +1,33 @@
+.bodyOff {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(82, 82, 82, 0.4);
+  z-index: 1000;
+  display: block;
+}
+
+#bodycover {
+  transition: background-color 0.5s ease-in-out;
+}
+
 #editBar {
   display: inline-block;
   width: 100%;
   padding: 10px 20px 0px 20px;
+  z-index: 1000002;
 }
 
 .editEpics{
   float: left;
+  z-index: 1000002;
 }
 
 .addGoals{ 
   float: right;
+  z-index: 10000002;
 }
 
 main {
@@ -17,6 +35,8 @@ main {
   position: relative;
   height: 80vh;
 }
+
+
 
 #header > h1 {
   color: #FF5A5F;
@@ -94,21 +114,26 @@ main {
 
 }
 
-.attributeBox {
+#addGoal {
   position: fixed;
   height: 40vh;
-  z-index: 10;
-  background-color: lightgrey;
-  left: 0;
-  bottom: 0;
+  background-color: #F3FCFF;
+  width: 100%;
+  left: 0%;
+  bottom:0;
   right: 0;
-  overflow: auto;
-  border: 1px solid black;
-  border-radius: 10px;
-  display: none;
+  border-radius: 25px 25px 0px 0px;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  z-index: 1001;
 }
 
-.attributeBox > label {
+.addGoalContent {
+  border: 1px solid black
+
+}
+
+.addGoal > label {
   display: inline-block;
   width: 100%;
   padding-left: 20px;
@@ -140,23 +165,51 @@ main {
 
 #addGoalForm {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 #addGoalForm > label {
   width: 20%;
 }
 
-#addGoalForm > select, input {
+#goalType > select, #completeBefore > input, #goalName {
   text-align: center;
   left: 40%;
   display: inline-block;
   width: 80%;
   margin-left:10%;
   margin-right:10%;
-  margin-bottom:10%;
+  margin-bottom: 5%;
   font-family: 'Changa One', cursive;
-  margin: 0;
   padding: 0;
   background: #F3FCFF;
+  border-radius: 10px;
+  background: rgba(118, 118, 128, 0.12);
+  height: 43px;
+  border-width: 0px;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.showAttributes {
+  height: 200px;
+}
+
+#goalType, #completeBefore {
+  width: 50%;
+  margin-right: 0;
+  float: left;
+}
+
+
+#savebtn{
+  float: right;
+  background: #0877E6;
+  border-radius: 14px;
+  width: 164px;
+  height: 43px;
+  border-width: 0px;
+  color:white;
+  margin-top: 20px;
+  margin-right: 5%;
 }
