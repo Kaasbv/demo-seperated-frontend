@@ -2,9 +2,10 @@ window.addEventListener("load", init);
 
 let goals = [];
 let type = "day";
-let startDate = dayjs().startOf('day');
+let startDate;
 
 function init(){
+  startDate = dayjs().startOf('day');
   addEvents();
   getGoals();
 }

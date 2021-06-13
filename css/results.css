@@ -1,0 +1,41 @@
+#tabs {
+  margin: 10px;
+}
+
+#tabs > span {
+  margin-left: 5px;
+}
+
+#tabs > span {
+  margin-left: 5px;
+}
+
+#tabs > span.active {
+  border-bottom: 1px solid blue;
+}
+
+#goalTable {
+  margin-top: 20px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+#goalTable thead {
+  font-weight: 600;
+}
+
+#goalTable, #goalTable thead {
+  border: 1px solid #70EE9C;
+  border-collapse: collapse;
+}
+
+#goalTable th, #goalTable td {
+  border-left: 1px solid #70EE9C;
+  border-right: 1px solid #70EE9C;
+}
+
+#controls.hide {
+  display: none;
+}

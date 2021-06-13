@@ -24,6 +24,6 @@ function grabDateValue(goalType, date){
   return value;
 }
 
-window.addEventListener("load", function(){
-  dayjs.extend(dayjs_plugin_weekOfYear);
-});
+
+dayjs.extend(dayjs_plugin_weekOfYear);
+dayjs.locale('nl');
