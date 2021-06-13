@@ -8,8 +8,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.5/plugin/weekOfYear.min.js" integrity="sha512-r6PdM7UHea0mdHsME1+5kfQdZLoxsFFOqFUXJ/9mf6lIhVtF2NGivqK7pS1IW9FRyRv/OS8U1NSRJ68qZv7Sug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/calender.js"></script>
   <body>
+    <?php include_once(__DIR__ . "/include/header.php") ?>
     <main>
-      <?php include_once(__DIR__ . "/include/header.php") ?>
       <div id="controls">
         <div id="datecontrols">
           <i class="backicon"></i>
