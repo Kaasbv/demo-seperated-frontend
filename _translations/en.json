@@ -1,7 +1,5 @@
 {
   "logoutText": "Log out",
-  "exampleH1": "Example",
-  "languageH1": "Select your language",
   "day":"Day",
   "week":"Week",
   "month":"Month",
@@ -17,5 +15,7 @@
   "goals":"Goals",
   "noGoalsFound":"No goals found",
   "epic":"Epics",
-  "dateFormat":"dd-mm-yyyy"
+  "timeDisplay": "Time Display",
+  "home": "Home",
+  "results": "Results"
 }

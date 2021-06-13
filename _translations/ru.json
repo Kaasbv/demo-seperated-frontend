@@ -1,7 +1,5 @@
 {
   "logoutText": "Выйти",
-  "exampleH1": "Пример",
-  "languageH1": "Выберите свой язык",
   "day":"День",
   "week":"Неделя",
   "month":"Месяц",
@@ -17,5 +15,8 @@
   "goals":"Цели",
   "noGoalsFound":"Цели не найдены",
   "epic":"Эпики",
-  "dateFormat":"дд-мм-гггг"
+  "dateFormat":"дд-мм-гггг",
+  "timeDisplay": "??",
+  "home": "??",
+  "results": "??"
 }

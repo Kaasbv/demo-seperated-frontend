@@ -1,7 +1,5 @@
 {
   "logoutText": "Uitloggen",
-  "exampleH1": "Voorbeeld",
-  "languageH1": "Selecteer je taal",
   "day":"dag",
   "week":"week",
   "month":"maand",
@@ -17,6 +15,7 @@
   "goals":"Goals",
   "noGoalsFound":"Geen doelen gevonden",
   "epic":"Epics",
-  "dateFormat":"dd-mm-jjjj"
-  
+  "timeDisplay": "Tijdsweergave",
+  "home": "Home",
+  "results": "Resultaten"
 }

@@ -1,11 +1,9 @@
+<?php include_once(__DIR__ . "/_modules/TranslationHelper.php") ?>
 <!doctype html>
 <html>
-
   <head>
     <?php include_once(__DIR__ . "/include/globalhead.php") ?>
-    <?php include_once(__DIR__ . "/_modules/TranslationHelper.php") ?>
     <?php $ts->loadJSData() ?>
-
 
     <title>Goals</title>
     <link rel="stylesheet" href="css/main.css">
