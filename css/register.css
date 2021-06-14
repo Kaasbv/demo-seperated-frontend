@@ -8,29 +8,84 @@ body {
     margin-top: 20%;
 }
 
-
 .G {
     text-align: center;
     font-size: 96px;
     color: #70EE9C;
     font-family: Arial, Helvetica, sans-serif;
     user-select: none;
+    margin-top: 26px;
+    margin-bottom: 26px;
 }
-
 
 #register {
     height: 35vh;
     text-align: center;
 }
 
-#register > input {
+#name {
+    margin-top: 20px;
+}
+
+#name > input:not(#middlename) {
+    width: 25%;
+    border-radius: 10px;
+    background: rgba(118, 118, 128, 0.12);
+    height: 43px;
+    border-width: 0px;
+    padding-left: 20px;
+    float: left;
+}
+
+#middlename {
+    width: 17%;
+    border-radius: 10px;
+    background: rgba(118, 118, 128, 0.12);
+    height: 43px;
+    border-width: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float:left;
+}
+
+#register > input:not(#agree):not(#registerBtn):not(#confirm_password):not(#password) {
     width: 92%;
     border-radius: 10px;
     background: rgba(118, 118, 128, 0.12);
     height: 43px;
     border-width: 0px;
     padding-left: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+#strength {
+    width: 92%;
+    border-radius: 10px;
+    height: 23px;
+    border-width: 0px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+#password {
+    width: 92%;
+    border-radius: 10px;
+    background: rgba(118, 118, 128, 0.12);
+    height: 43px;
+    border-width: 0px;
+    padding-left: 20px;
+}
+
+#confirm_password {
+    width: 92%;
+    border-radius: 10px;
+    background: rgba(118, 118, 128, 0.12);
+    height: 43px;
+    border-width: 0px;
+    padding-left: 20px;
+    margin-top: 20px;
 }
 
 input#registerBtn {
@@ -41,19 +96,8 @@ input#registerBtn {
     height: 43px;
     border-width: 0px;
     color:white;
-    margin-top: 20px;
+    margin-top: 30px;
     cursor: pointer;
-}
-
-.createOrRegister {
-    position: relative;
-    float: right;
-    margin-top: 5%;
-}
-
-#forgotPassword {
-    position: relative;
-    top: 40px;
 }
 
 #errorReturn {
@@ -63,8 +107,12 @@ input#registerBtn {
 #agree {
     float:left;
     max-height: 20px;
+    margin-left: 28px;
 }
-#agreetext{
+
+#agreetext {
     float:left;
-    font-size: 10px;
+    font-size: 11px;
+    margin-left: 2px;
+    padding-top: 3px;
 }

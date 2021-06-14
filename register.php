@@ -15,20 +15,24 @@
   <body>
     <div class="container">
       <h1 class="G">G.</h1>  
-          <form id="register" onsubmit="postRegister(event)">   
-            <input type="text" name="username" placeholder="Username"/>
-            <input type="text" name="email" placeholder="E-mailadress"/>  
-            <input type="text" name="firstname" placeholder="Firstname"/>  
-            <input type="text" name="middlename" placeholder="Middlename"/>  
-            <input type="text" name="lastname" placeholder="Lastname"/> 
-            <input type="date" name="birthdate" placeholder="Birthdate"/>  
+          <form id="register" onsubmit="postRegister(event)">
+            <input type="text" name="username" placeholder="Username" required="required"/>
+            <input type="email" name="email" placeholder="E-mailadress" required="required"/>
+            <div id="name">
+            <input type="text" name="firstname" placeholder="Firstname" required="required"/>  
+            <input type="text" name="middlename" placeholder="Middlename" id="middlename"/>
+            <input type="text" name="lastname" placeholder="Lastname" required="required"/>
+            </div>
+            <input type="date" name="birthdate" placeholder="Birthdate" required="required"/>
 
-            <input type="password" name="password" placeholder="Password" id="password"/>  
-            <input type="password" name="confirm_password" placeholder="Confirm password"/>
+            <div id="strength"></div>
 
-            <span id="error"></span>  
-            <br/><br/>
-            <input id="agree" type="checkbox" required="required"><br/><br/><div id="agreetext">I agree to the <a href="terms_and_conditions">terms and conditions</a></div><input type="submit" id="registerBtn" value="Register" />  
+            <input type="password" name="password" placeholder="Password" id="password" required="required"/>
+            <input type="password" name="confirm_password" placeholder="Confirm password" id="confirm_password" required="required"/>
+            <br/>
+            <span id="error"></span>
+            <br/>
+            <input id="agree" type="checkbox" required="required"><div id="agreetext">I agree to the <a href="terms_and_conditions.php">terms and conditions</a></div><input type="submit" id="registerBtn" value="Register" />  
           </form> 
         
           <div class="createOrRegister">
