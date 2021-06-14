@@ -85,8 +85,14 @@ $(document).ready(function(){
 function postRegister(event) {
 	event.preventDefault();
 	$.post("/api/user/register.php", $("#register").serialize(), function (data) {
-		window.location.replace("/");
+		postLogin();
 	}).fail(function(response) {
 		alert('Error: ' + response.msg);
 	});
+}
+
+function postLogin(){
+	$.post("/api/user/login.php", $("#register").serialize(), function (data) {
+		window.location.replace("/index.php");
+	})
 }

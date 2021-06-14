@@ -23,8 +23,6 @@
           </form> 
           <div class="createOrRegister">
             <a href="/register.php">Create an account</a>
-            <br>
-            <a id="forgotPassword" href="url">Forgot Password? </a>	
           </div> 
     </div>
   </body>
