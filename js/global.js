@@ -27,6 +27,8 @@ function grabDateValue(goalType, date){
   return value;
 }
 
+dayjs.extend(dayjs_plugin_weekOfYear);
+dayjs.locale('nl');
 window.addEventListener("load", function(){
   dayjs.extend(dayjs_plugin_weekOfYear);
 });
@@ -62,7 +64,6 @@ function getCookie(name) {
   return null;
   
 }
-
 
 function setDefaultFormLanguage(){
   select.value = getCookie("language");

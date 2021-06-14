@@ -150,6 +150,46 @@ nav > ul > li > a {
   padding-right: 5%;
 }
 
+#controls {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#controls > .sideicon {
+  position: absolute;
+  right: 0px;
+  padding: 10px;
+}
+
+#datecontrols {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#datecontrols > span {
+  padding: 0px 20px 0px 20px;
+}
+
+i {
+  width: 1.5em;
+  height: 1.5em;
+  display: block;
+  background-size: contain;
+}
+
+.backicon {
+  background-image: url("/images/icons/arrow-left.svg");
+}
+
+.nexticon {
+  background-image: url("/images/icons/arrow-right.svg");
+}
+=======
 .languageSelector {
   position: absolute;
   left:25%;
