@@ -32,7 +32,7 @@
           </div>
             <div id="completeBefore">
             <label for="Date"><?= $ts->completeBefore?></label>
-            <input type="date" name="end_date" placeholder= <?= $ts->dateFormat ?> required/>
+            <input type="date" name="end_date" required/>
           </div>
           <input type="hidden" id="parentId" name="parent_goal_id" value="">
           <span id="errorReturn"></span>
