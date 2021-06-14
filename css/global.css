@@ -4,6 +4,10 @@ body {
   margin: 0px;
 }
 
+body.nonscrollable{
+  overflow:hidden
+} 
+
 * {
   box-sizing: border-box;
 }
@@ -64,7 +68,6 @@ nav > ul {
   flex-direction: column;
   margin-top: 25%;
   align-items: center;
-  height: inherit;
   list-style: none;
   padding-left: 0;
 }
@@ -185,4 +188,41 @@ i {
 
 .nexticon {
   background-image: url("/images/icons/arrow-right.svg");
+}
+=======
+.languageSelector {
+  position: absolute;
+  left:25%;
+  bottom: 10%;
+  width: 50%;
+}
+
+.languageSelector > select {
+  -webkit-appearance: none;
+  padding: 7px 40px 7px 12px;
+  width: 100%;
+  border: 1px solid #E8EAED;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 1px 3px -2px #9098A9;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 150ms ease;
+  color: #5A667F;
+
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 20px) calc(1em - 1px),
+    calc(100% - 15px) calc(1em - 1px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1em;
+  background-repeat: no-repeat;
+  
 }
