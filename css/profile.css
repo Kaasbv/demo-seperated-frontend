@@ -4,9 +4,7 @@ body {
 }
 
 .container {
-    position: relative;
     margin: 10%;
-    margin-top: 20%;
 }
 
 aside {
@@ -28,27 +26,17 @@ aside {
     border-radius: 50%;
   }
 
-.Profiel {
+
+h1, h4 {
     text-align: left;
     color: #70EE9C;
 }
 
-.Password {
-    text-align: left;
-    color: #70EE9C;
+.container label {
+    float: left;
 }
 
-label {
-    float: left;
-}
-  
-#profile {
-    height: 30vh;
-    text-align: center;
-}
-  
-#profile > input {
-    float: left;
+.container > form  > input  {
     width: 92%;
     border-radius: 10px;
     background: rgba(118, 118, 128, 0.12);
@@ -59,23 +47,10 @@ label {
     margin-bottom: 10px;
 }
 
-#password {
-    height: 30vh;
-    text-align: center;
+.container > aside > img {
+    border-radius: 100%;
 }
-  
-#password > input {
-    float: left;
-    width: 92%;
-    border-radius: 10px;
-    background: rgba(118, 118, 128, 0.12);
-    height: 43px;
-    border-width: 0px;
-    padding-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-  
+
 input#saveBtn {
     float: right;
     background: #0877E6;

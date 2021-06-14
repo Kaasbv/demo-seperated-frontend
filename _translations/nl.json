@@ -17,5 +17,18 @@
   "epic":"Epics",
   "timeDisplay": "Tijdsweergave",
   "home": "Home",
-  "results": "Resultaten"
+  "results": "Resultaten",
+  "passwordsNotEqual": "Wachtwoorden zijn niet gelijk",
+  "email": "E-mailadres",
+  "firstname": "Voornaam",
+  "middlename": "Tussenvoegsel",
+  "lastname": "Achternaam",
+  "birthdate": "Geboortedatum",
+  "newPassword": "Nieuw wachtwoord",
+  "repeatPassword": "Herhaal wachtwoord",
+  "submit": "Opslaan",
+  "profile": "Profiel",
+  "changePassword": "Wachtwoord wijzigen",
+  "invalidExtension": "Afbeelding bestandstype verkeerd!",
+  "fileTooLarge": "Het bestand is te groot!"
 }

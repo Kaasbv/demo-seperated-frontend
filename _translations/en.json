@@ -17,5 +17,18 @@
   "epic":"Epics",
   "timeDisplay": "Time Display",
   "home": "Home",
-  "results": "Results"
+  "results": "Results",
+  "passwordsNotEqual": "Passwords are not equal",
+  "email": "Emailaddress",
+  "firstname": "Firstname",
+  "middlename": "Middlename",
+  "lastname": "Lastname",
+  "birthdate": "Birthdate",
+  "newPassword": "New password",
+  "repeatPassword": "Repeat password",
+  "submit": "Submit",
+  "profile": "Profile",
+  "changePassword": "Change Password",
+  "invalidExtension": "Image filetype invalid!",
+  "fileTooLarge": "File too large!"
 }

@@ -1,12 +1,40 @@
-document.querySelector("#hamburger").addEventListener("click", function(){
+let user;
+window.addEventListener("load", getUserData);
+
+function getUserData() {
+  $.ajax({
+    type: "GET",
+    url: "/api/user/get.php",
+    statusCode: {
+      401: function () {
+        window.location.replace("/auth.php");
+      }
+    }
+  }).done(function (data) {
+    user = data;
+    if (typeof afterUser === "function") {
+      afterUser();
+    }
+    updateProfileImages();
+  });
+}
+
+function updateProfileImages() {
+  let elements = Array.from(document.querySelectorAll(".profileimage"));
+  for (let element of elements) {
+    element.src = "/api/user/" + user.pf_path;
+  }
+}
+
+document.querySelector("#hamburger").addEventListener("click", function () {
   document.querySelector("#hamburger").classList.toggle("active");
   document.querySelector("nav").classList.toggle("show");
 });
 
-function grabDateValue(goalType, date){
-  if(typeof date !== "object") date = dayjs(date);
+function grabDateValue(goalType, date) {
+  if (typeof date !== "object") date = dayjs(date);
   let value;
-  switch(goalType){
+  switch (goalType) {
     case "day":
       value = date.format("DD-MM-YY");
       break;
@@ -24,6 +52,6 @@ function grabDateValue(goalType, date){
   return value;
 }
 
-window.addEventListener("load", function(){
+window.addEventListener("load", function () {
   dayjs.extend(dayjs_plugin_weekOfYear);
 });

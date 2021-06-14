@@ -13,5 +13,5 @@
     <span></span>
   </div>
   <h1>GOALR.</h1>
-  <a href="/auth.php"><img src="images/login.png" size=200%></a>
+  <a href="/profile.php"><img class="profileimage" src="/images/avatar.png" size=200%></a>
 </header>
