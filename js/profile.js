@@ -39,6 +39,7 @@ function uploadImage() {
   })
     .done(function () {
       alert("Uploaded!");
+      getUserData();
     });
 }
 
