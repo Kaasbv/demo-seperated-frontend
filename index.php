@@ -16,7 +16,8 @@
     </div>
     <main>
       <div id="backButton"></div>
-      <div id="header"></div>
+      <div id="header">
+      </div>
       <div id="goals"></div>
       <div id="addGoal">
         <form id="addGoalForm" onsubmit="CreateGoal(event)">
