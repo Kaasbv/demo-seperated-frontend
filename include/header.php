@@ -1,11 +1,10 @@
 <header>
   <nav>
     <ul class="list">
-      <li>Menu Item 1</li>
-      <li>Menu Item 2</li>
-      <li>Menu Item 3</li>
-      <li>Menu Item 4</li>
-      <li>Menu Item 5</li>
+      <li><a href="/"><?= $ts->home ?></a></li>
+      <li><a href="/calender.php"><?= $ts->timeDisplay ?></a></li>
+      <li><a href="/results.php"><?= $ts->results ?></a></li>
+      <li>Test</li>
     </ul>
   </nav>
   <div id="hamburger">

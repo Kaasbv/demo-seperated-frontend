@@ -1,0 +1,22 @@
+{
+  "logoutText": "Выйти",
+  "day":"День",
+  "week":"Неделя",
+  "month":"Месяц",
+  "year":"Год",
+  "goalType":"Тип цели",
+  "goalName":"Назовите Вашу цель",
+  "completeBefore":"Завершить до",
+  "save":"Сохранить",
+  "addEpic":"Добавить эпик",
+  "editEpic":"Редактировать эпик",
+  "addGoal":"Добавить цель",
+  "editGoal":"Редактировать цель",
+  "goals":"Цели",
+  "noGoalsFound":"Цели не найдены",
+  "epic":"Эпики",
+  "dateFormat":"дд-мм-гггг",
+  "timeDisplay": "??",
+  "home": "??",
+  "results": "??"
+}

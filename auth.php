@@ -18,7 +18,7 @@
           <form id="login" onsubmit="postLogin(event)">   
             <input type="text" name="email" placeholder="E-mailadress"/>  
             <input type="password" name="password" placeholder="Password"/>  
-            <span id="errorReturn"></span>  
+            <span id="error"></span>  
             <input type="submit" id="loginBtn" value="Login" />  
           </form> 
           <div class="createOrRegister">

@@ -1,0 +1,21 @@
+{
+  "logoutText": "Log out",
+  "day":"Day",
+  "week":"Week",
+  "month":"Month",
+  "year":"Year",
+  "goalType":"Goal type",
+  "goalName":"Name of the goal",
+  "completeBefore":"Complete before",
+  "save":"Save",
+  "addEpic":"Add Epic",
+  "editEpic":"Edit Epic",
+  "addGoal":"Add Goal", 
+  "editGoal":"Edit Goal",
+  "goals":"Goals",
+  "noGoalsFound":"No goals found",
+  "epic":"Epics",
+  "timeDisplay": "Time Display",
+  "home": "Home",
+  "results": "Results"
+}
