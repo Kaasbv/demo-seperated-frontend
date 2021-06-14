@@ -20,9 +20,11 @@ function getUserData() {
 }
 
 function updateProfileImages() {
-  let elements = Array.from(document.querySelectorAll(".profileimage"));
-  for (let element of elements) {
-    element.src = "/api/user/" + user.pf_path;
+  if(user.pf_path && user.pf_path.length > 0){
+    let elements = Array.from(document.querySelectorAll(".profileimage"));
+    for (let element of elements) {
+      element.src = "/api/user/" + user.pf_path;
+    }
   }
 }
 
