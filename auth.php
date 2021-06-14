@@ -22,9 +22,7 @@
             <input type="submit" id="loginBtn" value="Login" />  
           </form> 
           <div class="createOrRegister">
-            <a href="url">Create an account</a>
-            <br>
-            <a id="forgotPassword" href="url">Forgot Password? </a>	
+            <a href="/register.php">Create an account</a>
           </div> 
     </div>
   </body>

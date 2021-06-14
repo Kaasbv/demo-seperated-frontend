@@ -5,4 +5,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.5/dayjs.min.js" integrity="sha512-n6mJ6AqoohFfbgx3x7N162B/zRNs5x8uvsStlHC+LCvqwKW7oiucE07Ehatg62ybx6Vo1ctaZwm/4sSRUTSIQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.5/plugin/weekOfYear.min.js" integrity="sha512-r6PdM7UHea0mdHsME1+5kfQdZLoxsFFOqFUXJ/9mf6lIhVtF2NGivqK7pS1IW9FRyRv/OS8U1NSRJ68qZv7Sug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.5/locale/nl.min.js" integrity="sha512-3EmS5x5JxNumR4/ga6oCLhO9ysK0O/PQh710mRxeXVNorETtkHVl08nGTbQUkoiHEsw6SySbyvKQPU+Og2zYOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script defer src="js/global.js"></script>
