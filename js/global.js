@@ -1,15 +1,50 @@
-document.querySelector("#hamburger").addEventListener("click", function(){
+let user;
+window.addEventListener("load", getUserData);
+window.addEventListener("load", setDefaultFormLanguage);
+window.addEventListener("load", function(){
+  dayjs.extend(dayjs_plugin_weekOfYear);
+});
+
+dayjs.extend(dayjs_plugin_weekOfYear);
+dayjs.locale('nl');
+
+function getUserData() {
+  $.ajax({
+    type: "GET",
+    url: "/api/user/get.php",
+    statusCode: {
+      401: function () {
+        window.location.replace("/auth.php");
+      }
+    }
+  }).done(function (data) {
+    user = data;
+    if (typeof afterUser === "function") {
+      afterUser();
+    }
+    updateProfileImages();
+  });
+}
+
+function updateProfileImages() {
+  if(user.pf_path && user.pf_path.length > 0){
+    let elements = Array.from(document.querySelectorAll(".profileimage"));
+    for (let element of elements) {
+      element.src = "/api/user/" + user.pf_path;
+    }
+  }
+}
+
+document.querySelector("#hamburger").addEventListener("click", function () {
   document.querySelector("#hamburger").classList.toggle("active");
   document.body.classList.toggle("nonscrollable");
   document.querySelector("nav").classList.toggle("show");
 });
 
-window.addEventListener("load", setDefaultFormLanguage);
-
 function grabDateValue(goalType, date){
   if(typeof date !== "object") date = dayjs(date);
   let value;
-  switch(goalType){
+  switch (goalType) {
     case "day":
       value = date.format("DD-MM-YY");
       break;
@@ -26,12 +61,6 @@ function grabDateValue(goalType, date){
 
   return value;
 }
-
-dayjs.extend(dayjs_plugin_weekOfYear);
-dayjs.locale('nl');
-window.addEventListener("load", function(){
-  dayjs.extend(dayjs_plugin_weekOfYear);
-});
 
 let select = document.querySelector("#languageSelect");
 
@@ -67,5 +96,4 @@ function getCookie(name) {
 
 function setDefaultFormLanguage(){
   select.value = getCookie("language");
-
 }

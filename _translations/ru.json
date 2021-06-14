@@ -18,5 +18,18 @@
   "dateFormat":"дд-мм-гггг",
   "timeDisplay": "??",
   "home": "??",
-  "results": "??"
+  "results": "??",
+  "passwordsNotEqual": "??",
+  "email": "??",
+  "firstname": "??",
+  "middlename": "??",
+  "lastname": "??",
+  "birthdate": "??",
+  "newPassword": "??",
+  "repeatPassword": "??",
+  "submit": "??",
+  "profile": "??",
+  "changePassword": "??",
+  "invalidExtension": "??",
+  "fileTooLarge": "??"
 }

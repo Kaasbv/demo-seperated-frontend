@@ -1,0 +1,63 @@
+body {
+    background-color: #F3FCFF;
+    font-family: 'Changa One', cursive;
+}
+
+.container {
+    margin: 10%;
+}
+
+aside {
+    width: 25%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: none;
+}
+
+.avatar {
+    vertical-align: middle;
+    border-style: solid;
+    border-color: #70EE9C;
+    border-width: 2px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+
+h1, h4 {
+    text-align: left;
+    color: #70EE9C;
+}
+
+.container label {
+    float: left;
+}
+
+.container > form  > input  {
+    width: 92%;
+    border-radius: 10px;
+    background: rgba(118, 118, 128, 0.12);
+    height: 43px;
+    border-width: 0px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container > aside > img {
+    border-radius: 100%;
+}
+
+input#saveBtn {
+    float: right;
+    background: #0877E6;
+    border-radius: 14px;
+    width: 164px;
+    height: 43px;
+    border-width: 0px;
+    color:white;
+    margin-top: 20px;
+}

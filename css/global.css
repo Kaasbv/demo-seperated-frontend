@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&display=swap');
 
 body {
   background-color: #F3FCFF;
@@ -150,6 +151,11 @@ nav > ul > li > a {
   padding-right: 5%;
 }
 
+
+.error {
+  color: red;
+}
+
 #controls {
   position: relative;
   width: 100%;
@@ -189,7 +195,7 @@ i {
 .nexticon {
   background-image: url("/images/icons/arrow-right.svg");
 }
-=======
+
 .languageSelector {
   position: absolute;
   left:25%;
@@ -224,5 +230,4 @@ i {
     5px 5px,
     1px 1em;
   background-repeat: no-repeat;
-  
 }
