@@ -13,9 +13,9 @@ function showFileDialog() {
 
 function uploadImage() {
   let uploadButton = document.querySelector("#hiddenUploadButton");
-  var files = uploadButton.files;
+  let files = uploadButton.files;
 
-  var fd = new FormData();
+  let fd = new FormData();
   fd.append('fileToUpload', files[0]);
 
   $.ajax({
