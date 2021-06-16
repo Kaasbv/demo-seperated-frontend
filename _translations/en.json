@@ -33,5 +33,7 @@
   "fileTooLarge": "File too large!",
   "search": "Search",
   "searchPlaceholder": "Type here to search...",
-  "goalsNotFound": "No goals found"
+  "goalsNotFound": "No goals found",
+  "total": "Total",
+  "points": "Points"
 }
