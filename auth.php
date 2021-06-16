@@ -18,13 +18,11 @@
           <form id="login" onsubmit="postLogin(event)">   
             <input type="text" name="email" placeholder="E-mailadress"/>  
             <input type="password" name="password" placeholder="Password"/>  
-            <span id="errorReturn"></span>  
+            <span id="error"></span>  
             <input type="submit" id="loginBtn" value="Login" />  
           </form> 
           <div class="createOrRegister">
-            <a href="url">Create an account</a>
-            <br>
-            <a id="forgotPassword" href="url">Forgot Password? </a>	
+            <a href="/register.php">Create an account</a>
           </div> 
     </div>
   </body>

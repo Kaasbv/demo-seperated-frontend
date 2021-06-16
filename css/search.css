@@ -1,0 +1,22 @@
+#term {
+  text-align: center;
+  left: 40%;
+  display: inline-block;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  font-family: 'Changa One', cursive;
+  padding: 0;
+  padding-left: 0px;
+  background: #F3FCFF;
+  border-radius: 10px;
+  background: rgba(118, 118, 128, 0.12);
+  height: 43px;
+  border-width: 0px;
+  padding-left: 20px;
+}
+
+main {
+  padding: 20px;
+}
