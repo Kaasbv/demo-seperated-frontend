@@ -113,7 +113,7 @@ function deleteAttribute(event) {
     });
 };
 
-//Jquery, make a change to an attribute input field
+//Jquery, make a change to an attribute input field and save this
 function saveContent() {
   let contents = document.querySelectorAll(".attribute-input");
   contents.forEach(content => {
@@ -125,6 +125,11 @@ function saveContent() {
   });
 };
 
+//Jquery, Complete the goal by setting status to "done"
 function completeGoal() {
-  
+  $.post('/api/goal/update.php',
+    { ID_goal: goal.ID_goal, status: "done" },
+    (data, status) => {
+      alert(status + ": Goal completed");
+    });
 };
