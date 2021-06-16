@@ -73,6 +73,13 @@ nav > ul {
   padding-left: 0;
 }
 
+nav > img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+
 nav > ul > li {
   margin: 1.5rem auto;
   font-size: 1.25rem;

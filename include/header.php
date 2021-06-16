@@ -1,5 +1,6 @@
 <header>
   <nav>
+    <img onclick="logout()" src="images/icons/log-out.svg">
     <ul class="list">
       <li><a href="/"><?= $ts->home ?></a></li>
       <li><a href="/calender.php"><?= $ts->timeDisplay ?></a></li>
