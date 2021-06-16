@@ -143,7 +143,7 @@ function completeGoal() {
   $.post('/api/goal/update.php',
     { ID_goal: currentGoal.ID_goal, status: "done" },
     (data, status) => {
-      alert(status + ": Goal completed");
+      toggleEdit();
     });
 };
 
