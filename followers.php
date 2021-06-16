@@ -12,21 +12,19 @@
 </head>
 
 <body>
-  <div class="bodyCover" onclick="removeUnderModal()"></div>
   <?php include_once(__DIR__ . "/include/header.php") ?>
-
-
-  </div>
+  <div class="bodyCover" onclick="removeUnderModal()"></div>
   <main>
-    <div id="addFriendBar"><span class="addFriend" onclick="showUnderModal();">Add Friend</span></div>
+    <div id="addFriendBar">
+      <span class="addFriend" onclick="showUnderModal();">Add Friend</span>
+    </div>
     <h1 class="header">Followers.</h1>
     <div id="friends" class="row">
       Loading...
     </div>
     <div class="undermodal" id="addFriend">
-        <input id="friendName" type="text" name="name" placeholder="<?= $ts->friendName?>" required/>
-        <div id="userresults"></div>
-      </div>   
+      <input id="friendName" type="text" name="name" placeholder="<?= $ts->friendName?>" required/>
+      <div id="userresults"></div>
     </div>
   </main>
 </body>
