@@ -1,9 +1,14 @@
 @font-face {
-  font-family: 'futurabold';
-  src: url('futura_bold-webfont.woff2') format('woff2'),
-       url('futura_bold-webfont.woff') format('woff');
-  font-weight: normal;
+  font-family: 'Futura';
+  src: url('Futura-Bold.eot');
+  src: url('Futura-Bold.eot?#iefix') format('embedded-opentype'),
+      url('Futura-Bold.woff2') format('woff2'),
+      url('Futura-Bold.woff') format('woff'),
+      url('Futura-Bold.ttf') format('truetype'),
+      url('Futura-Bold.svg#Futura-Bold') format('svg');
+  font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 body {
@@ -142,18 +147,14 @@ nav > ul > li > a {
 }
 
 .goalName, .epicName {
-  font-family: 'futurabold';
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'Futura';
   font-size: 17px;
   line-height: 22px;
   letter-spacing: -0.408px;
 }
 
 .epicName, .epicScore {
-  font-family: 'futurabold';
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'Futura';
   font-size: 22px;
   line-height: 28px;
   letter-spacing: 0.35px;
@@ -298,7 +299,7 @@ i {
   margin-left:10%;
   margin-right:10%;
   margin-bottom: 5%;
-  font-family: 'Changa One', cursive;
+  font-family: 'Futura';
   padding: 0;
   background: #F3FCFF;
   border-radius: 10px;
