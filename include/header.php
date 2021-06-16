@@ -13,6 +13,7 @@
         <option value="nl">Nederlands</option>
         <option value="en">English</option>
         <option value="ru">Русский</option>
+        <option value="tr">Türkçe</option>
       </select>
     </div>
   </nav>

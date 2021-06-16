@@ -8,6 +8,8 @@
     <title>Goals</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/index.js"></script>
+
+    
   </head>
   <body>
     <div class="bodyCover" onclick="removeUnderModal()"></div>
