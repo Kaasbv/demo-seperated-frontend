@@ -1,13 +1,15 @@
 <header>
   <nav>
+    <img onclick="logout()" src="images/icons/log-out.svg">
     <ul class="list">
       <li><a href="/"><?= $ts->home ?></a></li>
       <li><a href="/calender.php"><?= $ts->timeDisplay ?></a></li>
       <li><a href="/results.php"><?= $ts->results ?></a></li>
       <li><a href="/followers.php"><?=$ts->followers ?></a></li>
+      <li><a href="/search.php"><?= $ts->search ?></a></li>
     </ul>
     <div class="languageSelector">
-      <select id="languageSelect"   onchange="updateLanguage();">
+      <select id="languageSelect" onchange="updateLanguage();">
         <option value="nl">Nederlands</option>
         <option value="en">English</option>
         <option value="ru">Русский</option>

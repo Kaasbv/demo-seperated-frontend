@@ -35,4 +35,6 @@
   "search": "Zoeken",
   "usersNotFound": "Geen gebruikers gevonden",
   "followers": "Volgers"
+  "searchPlaceholder": "Type hier om te zoeken...",
+  "goalsNotFound": "Geen goals gevonden"
 }

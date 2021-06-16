@@ -35,4 +35,6 @@
   "search": "Search",
   "usersNotFound": "No users found",
   "followers": "Followers"
+  "searchPlaceholder": "Type here to search...",
+  "goalsNotFound": "No goals found"
 }
