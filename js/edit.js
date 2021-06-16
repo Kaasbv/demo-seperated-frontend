@@ -113,7 +113,8 @@ function deleteAttribute(event) {
 };
 
 //Jquery, make a change to an attribute input field and save this
-function saveContent() {
+function saveContent(event) {
+  event.preventDefault();
   document.getElementById('goalEditId').value = currentGoal.ID_goal;
 
 	$.post("/api/goal/update.php", $("#goaleditform").serialize() , function (data) {

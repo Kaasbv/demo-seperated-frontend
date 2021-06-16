@@ -69,13 +69,13 @@
         </div>
       </div>
       <div id="overlay"></div>
-      <button class="goal-buttons-edit" onclick="saveContent()"><img src="images/save.png"></button>
+      <button class="goal-buttons-edit" onclick="saveContent(event)"><img src="images/save.png"></button>
     </div>
     <br>
 
     <div id="main">
       <h2>Properties</h2>
-      <form id="goaleditform">
+      <form id="goaleditform" onsubmit="saveContent(event)">
         <label>Name</label>
         <input type="text" name="name" placeholder="<?= $ts->goalName?>" required />
         <label>End date</label>
