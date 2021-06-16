@@ -30,5 +30,8 @@
   "profile": "Profile",
   "changePassword": "Change Password",
   "invalidExtension": "Image filetype invalid!",
-  "fileTooLarge": "File too large!"
+  "fileTooLarge": "File too large!",
+  "friendName": "Friend Name",
+  "search": "Search",
+  "usersNotFound": "No users found"
 }

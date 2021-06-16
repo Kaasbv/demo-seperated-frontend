@@ -30,5 +30,8 @@
   "profile": "Profiel",
   "changePassword": "Wachtwoord wijzigen",
   "invalidExtension": "Afbeelding bestandstype verkeerd!",
-  "fileTooLarge": "Het bestand is te groot!"
+  "fileTooLarge": "Het bestand is te groot!",
+  "friendName": "Vriend Naam",
+  "search": "Zoeken",
+  "usersNotFound": "Geen gebruikers gevonden"
 }

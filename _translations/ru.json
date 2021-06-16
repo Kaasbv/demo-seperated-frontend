@@ -31,5 +31,8 @@
   "profile": "??",
   "changePassword": "??",
   "invalidExtension": "??",
-  "fileTooLarge": "??"
+  "fileTooLarge": "??",
+  "friendName": "??",
+  "search": "??",
+  "usersNotFound": "??"
 }

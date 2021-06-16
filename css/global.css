@@ -231,3 +231,87 @@ i {
     1px 1em;
   background-repeat: no-repeat;
 }
+
+.undermodal {
+  position: fixed;
+  height: 40vh;
+  background-color: #F3FCFF;
+  width: 100%;
+  left: 0%;
+  bottom:0;
+  right: 0;
+  border-radius: 25px 25px 0px 0px;
+  max-height: 0;
+  transition: max-height 0.5s ease-out;
+  z-index: 1001;
+}
+
+.undermodal.show {
+  border: 1px solid black
+}
+
+.bodyCover {
+  transition: background-color 0.5s ease-in-out;
+}
+
+.bodyCover.show {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(82, 82, 82, 0.4);
+  z-index: 1000;
+  display: block;
+}
+
+#savebtn{
+  float: right;
+  background: #0877E6;
+  border-radius: 14px;
+  width: 164px;
+  height: 43px;
+  border-width: 0px;
+  color:white;
+  margin-top: 20px;
+  margin-right: 5%;
+}
+
+#friendName {
+  text-align: center;
+  left: 40%;
+  display: inline-block;
+  width: 80%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-bottom: 5%;
+  font-family: 'Changa One', cursive;
+  padding: 0;
+  background: #F3FCFF;
+  border-radius: 10px;
+  background: rgba(118, 118, 128, 0.12);
+  height: 43px;
+  border-width: 0px;
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.btn{
+  float: right;
+  background: #0877E6;
+  border-radius: 14px;
+  width: 150px;
+  height: 30px;
+  border-width: 0px;
+  color:white;
+}
+
+.btnf{
+  float: right;
+  background: #0877E6;
+  border-radius: 14px;
+  width: 150px;
+  height: 30px;
+  border-width: 0px;
+  color:white;
+}
