@@ -51,6 +51,8 @@
 
       <div>
         <button id="complete-goal" onclick="completeGoal()">Complete main goal</button>
+      </div>
+    </div>
   </main>
 </body>
 

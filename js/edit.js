@@ -1,44 +1,40 @@
-let goal = {
-  username: "user1",
-  name: "Thailand",
-  type: "week",
-  ID_goal: 2,
-  parent_goal_id: 3,
-  description: "Dit is een leuke description",
-  status: "to do",
-  start_date: "2020-01-01 20:00:00",
-  end_date: "2020-01-01 20:00:00",
-  date_created: "2021-05-30 00:00:00",
-  date_updated: "2021-05-30 00:00:00"
+function initEdit() {
+  renderFields();
+  renderAttributes(currentGoal.ID_goal);
 }
 
-window.addEventListener("load", initEdit);
+function renderFields(){
 
-function initEdit() {
-  let textarea = document.querySelector("[name=description]");
-  textarea.value = goal.description;
+  let name = document.querySelector(`#goaleditform input[name=name]`);
+  name.value = currentGoal.name;
 
-  renderAttributes(goal.ID_goal);
+  let endDate = document.querySelector(`#goaleditform input[name=end_date]`);
+  endDate.value = dayjs().format("YYYY-MM-DD");
 }
 
 function renderAttributes(goalId) {
   $.getJSON("/api/attribute/list.php?id_goal=" + goalId, function (data) {
-    renderHtml(data);
+    renderAttributesHTML(data);
   });
 }
 
-function renderHtml(attributes) {
+function renderAttributesHTML(attributes) {
   let container = document.querySelector("#attributes");
 
   let html = "";
 
-  for (let attribute of attributes) {
-    html += `
-      <label for="${attribute.name}">${attribute.name}</label><br>
-      <input class="attribute-input" type="text" name="${attribute.name}" id="${attribute.name}" value="${attribute.content}">
-      <button data-name="${attribute.name}" onclick="deleteAttribute(event);">&times;</button><br>
-    `;
+  if(attributes.length === 0){
+    html = "No attributes yet";
+  }else{
+    for (let attribute of attributes) {
+      html += `
+        <label for="${attribute.name}">${attribute.name}</label><br>
+        <input class="attribute-input" type="text" name="${attribute.name}" id="${attribute.name}" value="${attribute.content}">
+        <button data-name="${attribute.name}" onclick="deleteAttribute(event);">&times;</button><br>
+      `;
+    }
   }
+
 
   container.innerHTML = html;
 }
@@ -90,14 +86,17 @@ function closeModal(modal) {
 //JQuery post to back-end
 function postAttribute(event) {
   let id = document.querySelector("[name=id_goal]");
-  id.value = goal.ID_goal;
+  id.value = currentGoal.ID_goal;
 
   event.preventDefault();
   $.post('/api/attribute/create.php',
     $("#attribute").serialize(),
     (data, status) => {
-      alert('status: ' + status);
-      renderAttributes(goal.ID_goal);
+      const modals = document.querySelectorAll('.modal.active');
+      modals.forEach(modal => {
+        closeModal(modal);
+      });
+      renderAttributes(currentGoal.ID_goal);
     });
 };
 
@@ -107,29 +106,52 @@ function deleteAttribute(event) {
   let name = target.dataset.name;
 
   $.post('/api/attribute/delete.php',
-    { name: name, id_goal: goal.ID_goal },
+    { name: name, id_goal: currentGoal.ID_goal },
     () => {
-      renderAttributes(goal.ID_goal);
+      renderAttributes(currentGoal.ID_goal);
     });
 };
 
 //Jquery, make a change to an attribute input field and save this
 function saveContent() {
+  document.getElementById('goalEditId').value = currentGoal.ID_goal;
+
+	$.post("/api/goal/update.php", $("#goaleditform").serialize() , function (data) {
+    getGoals();
+    toggleEdit();
+  })
+  .fail(function() { 
+    alert("data is not valid");
+	})
+
+  saveAttributes();
+};
+
+function saveAttributes(){
   let contents = document.querySelectorAll(".attribute-input");
   contents.forEach(content => {
     $.post('/api/attribute/change.php',
-      { name: content.name, content: content.value, id_goal: goal.ID_goal },
+      { name: content.name, content: content.value, id_goal: currentGoal.ID_goal },
       () => {
-        renderAttributes(goal.ID_goal);
+        renderAttributes(currentGoal.ID_goal);
       });
   });
-};
+}
 
 //Jquery, Complete the goal by setting status to "done"
 function completeGoal() {
   $.post('/api/goal/update.php',
-    { ID_goal: goal.ID_goal, status: "done" },
+    { ID_goal: currentGoal.ID_goal, status: "done" },
     (data, status) => {
       alert(status + ": Goal completed");
     });
 };
+
+
+function toggleEdit(){
+  let container = document.querySelector(".container");
+  container.classList.toggle("show");
+  if(container.classList.contains("show")){
+    initEdit();
+  }
+}

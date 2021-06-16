@@ -2,12 +2,13 @@ window.addEventListener("load", getGoals);
 
 
 var goals = [];
-var currentGoal = 1;
+var currentGoal = {ID_goal: 1};
+var currentGoalObject = {};
 var previousGoals = [];
 
 
 function getGoals(){
-  $.getJSON("/api/goal/list.php?parent_id="+ currentGoal, function( data ) {
+  $.getJSON("/api/goal/list.php?parent_id="+ currentGoal.ID_goal, function( data ) {
     goals = data;
     epicOrGoal();
     renderHtml();
@@ -37,13 +38,13 @@ function epicOrGoal(){
 
       if (lastGoal == 1 ) {
         htmlBar += `
-        <span class ="editEpics">${ts.editEpic}</span>
+        <span class ="editEpics" onclick="toggleEdit()">${ts.editEpic}</span>
         <span class ="addGoals" onclick="showAddGoal()">${ts.addGoal}</span>
         `
       }
       else {
         htmlBar += `
-        <span class ="editEpics">${ts.editGoal} </span>
+        <span class ="editEpics" onclick="toggleEdit()">${ts.editGoal} </span>
         <span class ="addGoals" onclick="showAddGoal()">${ts.addGoal}</span>
         `;
       }
@@ -65,7 +66,7 @@ function renderHtml(){
     for(let goal of goals){
       let Id = goal.ID_goal;
       let dateText = goal.type && goal.end_date ? grabDateValue(goal.type, goal.end_date) : "";
-      if ( currentGoal != 1) {
+      if ( currentGoal.ID_goal != 1) {
         html += `
         <div id="goalBox" data-id=${Id} onclick="clickgoal(event)">
         <span class="goalName">${goal.name}</span>
@@ -90,13 +91,14 @@ function renderHtml(){
 function clickgoal(e){
   let element = e.currentTarget;
   previousGoals.push(currentGoal);
-  currentGoal = element.dataset.id;
+  let id = element.dataset.id;
+  currentGoal = goals.find(goal => goal.ID_goal == id);
   getGoals();
 }
 
 function clickBack(e){
   if (currentGoal < 1){
-    currentGoal = 1;
+    currentGoal = {ID_goal: 1};
   }
   else {
   currentGoal = previousGoals.pop();
@@ -110,7 +112,7 @@ function showAddGoal(){
 
   bodyCover.classList.toggle("bodyOff");
   modal.classList.toggle("addGoalContent");
-  document.getElementById('parentId').value = currentGoal;
+  document.getElementById('parentId').value = currentGoal.ID_goal;
 
     if (parseInt(modal.style.maxHeight) !== 0 && modal.style.maxHeight.length !== 0)  {
         modal.style.maxHeight = 0 + "px";
@@ -131,7 +133,7 @@ function removeAddScreen(){
 
 function CreateGoal(event) {
   event.preventDefault();
-  document.getElementById('parentId').value = currentGoal;
+  document.getElementById('parentId').value = currentGoal.ID_goal;
 	$.post("/api/goal/create.php", $("#addGoalForm").serialize() , function (data) {
     removeAddScreen();
     getGoals();
