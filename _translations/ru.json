@@ -31,5 +31,8 @@
   "profile": "Профиль",
   "changePassword": "Сменить пароль",
   "invalidExtension": "Некорректный тип файла!",
-  "fileTooLarge": "Слишком большой файл!"
+  "fileTooLarge": "Слишком большой файл!",
+  "search": "??",
+  "searchPlaceholder": "??",
+  "goalsNotFound": "No goals found"
 }

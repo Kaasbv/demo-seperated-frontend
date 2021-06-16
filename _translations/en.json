@@ -30,5 +30,8 @@
   "profile": "Profile",
   "changePassword": "Change Password",
   "invalidExtension": "Image filetype invalid!",
-  "fileTooLarge": "File too large!"
+  "fileTooLarge": "File too large!",
+  "search": "Search",
+  "searchPlaceholder": "Type here to search...",
+  "goalsNotFound": "No goals found"
 }

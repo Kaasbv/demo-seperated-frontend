@@ -30,5 +30,8 @@
   "profile": "Profiel",
   "changePassword": "Wachtwoord wijzigen",
   "invalidExtension": "Afbeelding bestandstype verkeerd!",
-  "fileTooLarge": "Het bestand is te groot!"
+  "fileTooLarge": "Het bestand is te groot!",
+  "search": "Zoeken",
+  "searchPlaceholder": "Type hier om te zoeken...",
+  "goalsNotFound": "Geen goals gevonden"
 }

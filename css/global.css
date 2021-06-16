@@ -231,3 +231,7 @@ i {
     1px 1em;
   background-repeat: no-repeat;
 }
+
+.center {
+  text-align: center;
+}
