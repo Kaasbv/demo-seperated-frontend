@@ -49,20 +49,20 @@
   <div class="container">
 
     <div id="cancel">
-      <span onclick="toggleEdit()">Cancel</span>
+      <span onclick="toggleEdit()"><?= $ts->cancel?></span>
     </div>
 
     <div class="goal-buttons">
       <button data-modal-target="#modal" class="goal-buttons-edit"><img src="images/plus.png"></button>
       <div class="modal" id="modal">
         <div class="modal-header">
-          <div class="title">Add attribute</div>
+          <div class="title"><?= $ts->addAttribute?></div>
           <button data-close-button class="close-button">&times;</button>
         </div>
         <div class="modal-body">
           <form id="attribute" onsubmit="postAttribute(event)">
             <input type="text" name="id_goal"><br>
-            <label for="name">Name:</label><br>
+            <label for="name"><?= $ts->name_?></label><br>
             <input type="text" name="name"><br>
             <input type="submit" value="Submit">
           </form>
@@ -82,12 +82,12 @@
         <input type="date" name="end_date" required />
         <input type="hidden" id="goalEditId" name="ID_goal" value="">
       </form>
-      <h2>Attributes</h2>
+      <h2><?= $ts->attributes?></h2>
       <div id="attributes"></div>
     </div>
 
     <div>
-      <button id="complete-goal" onclick="completeGoal()">Complete main goal</button>
+      <button id="complete-goal" onclick="completeGoal()"><?= $ts->completeMainGoal?></button>
     </div>
   </div>
 </body>

@@ -39,5 +39,10 @@
   "searchPlaceholder": "Type hier om te zoeken...",
   "goalsNotFound": "Geen goals gevonden",
   "total": "Totaal",
-  "points": "Punten"
+  "points": "Punten",
+  "cancel": "Annuleren",
+  "addAttribute": "Attribuut toevoegen",
+  "name": "Naam",
+  "completeMainGoal": "Main goal afronden",
+  "attributes": "Attributen"
 }

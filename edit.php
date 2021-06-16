@@ -16,14 +16,14 @@
     <div class="container">
 
       <div id="cancel">
-        <h1 href="">Cancel</h1>
+        <h1 href=""><?= $ts->cancel?></h1>
       </div>
 
       <div class="goal-buttons">
         <button data-modal-target="#modal" class="goal-buttons-edit"><img src="images/plus.png"></button>
         <div class="modal" id="modal">
           <div class="modal-header">
-            <div class="title">Add attribute</div>
+            <div class="title"><?= $ts->addAttribute?></div>
             <button data-close-button class="close-button">&times;</button>
           </div>
           <div class="modal-body">
@@ -41,8 +41,8 @@
       <br>
 
       <div id="main">
-        <h1>Goal attributes</h1>
-        <p>Description</p>
+        <h1><?= $ts->goalAttributes?></h1>
+        <p><?= $ts->description?></p>
         <form>
           <textarea name="description"></textarea>
         </form>

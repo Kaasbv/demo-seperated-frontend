@@ -37,5 +37,12 @@
   "followers": "Followers",
   "searchPlaceholder": "Type here to search...",
   "total": "Total",
-  "points": "Points"
+  "points": "Points",
+  "cancel": "Cancel",
+  "addAttribute": "Add attribute",
+  "name": "Name",
+  "completeMainGoal": "Complete main goal",
+  "attributes": "Attributes",
+  "goalAttributes": "Goal attributes",
+  "description": "Description"
 }
