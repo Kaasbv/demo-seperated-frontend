@@ -89,13 +89,13 @@ function getCookie(name) {
       }
   }
   
-  // Return null if not found
-  return null;
-  
+  // Return false if not found
+  return false;
 }
 
 function setDefaultFormLanguage(){
-  select.value = getCookie("language");
+  let cookieLanguage = getCookie("language");
+  select.value = cookieLanguage ? cookieLanguage : "en";
 }
 
 //Preload images
