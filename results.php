@@ -12,8 +12,8 @@
     <?php include_once(__DIR__ . "/include/header.php") ?>
     <main>
       <div id="tabs">
-        <span id="totalButton">Total</span>
-        <span id="weekButton" class="active">Week</span>
+        <span id="totalButton"><?= $ts->total ?></span>
+        <span id="weekButton" class="active"><?= $ts->week ?></span>
       </div>
       <div id="controls">
         <div id="datecontrols">
@@ -27,8 +27,8 @@
       <table id="goalTable">
         <thead>
           <tr>
-            <td>Goalnaam</td>
-            <td>Points</td>
+            <td><?= $ts->goalName ?></td>
+            <td><?= $ts->points ?></td>
           <tr>
         </thead>
         <tbody>

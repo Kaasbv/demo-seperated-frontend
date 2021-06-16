@@ -32,7 +32,8 @@
   "changePassword": "Сменить пароль",
   "invalidExtension": "Некорректный тип файла!",
   "fileTooLarge": "Слишком большой файл!",
-  "search": "??",
-  "searchPlaceholder": "??",
-  "goalsNotFound": "No goals found"
+  "search": "Поиск",
+  "searchPlaceholder": "Печатайте здесь для поиска...",
+  "total": "Итого",
+  "points": "Баллы"
 }

@@ -6,7 +6,7 @@
   "year":"jaar",
   "goalType":"Goal type",
   "goalName":"Naam van het goal",
-  "completeBefore":"voltooien voor",
+  "completeBefore":"Voltooien voor",
   "save":"Save",
   "addEpic":"Epic toevoegen",
   "editEpic":"Epic wijzigen",
@@ -15,6 +15,7 @@
   "goals":"Goals",
   "noGoalsFound":"Geen doelen gevonden",
   "epic":"Epics",
+  "dateFormat": "dd-mm-jjjj",
   "timeDisplay": "Tijdsweergave",
   "home": "Home",
   "results": "Resultaten",
@@ -33,5 +34,6 @@
   "fileTooLarge": "Het bestand is te groot!",
   "search": "Zoeken",
   "searchPlaceholder": "Type hier om te zoeken...",
-  "goalsNotFound": "Geen goals gevonden"
+  "total": "Totaal",
+  "points": "Punten"
 }
