@@ -32,8 +32,12 @@
   "changePassword": "Wachtwoord wijzigen",
   "invalidExtension": "Afbeelding bestandstype verkeerd!",
   "fileTooLarge": "Het bestand is te groot!",
+  "friendName": "Vriend Naam",
   "search": "Zoeken",
+  "usersNotFound": "Geen gebruikers gevonden",
+  "followers": "Volgers",
   "searchPlaceholder": "Type hier om te zoeken...",
+  "goalsNotFound": "Geen goals gevonden"
   "total": "Totaal",
   "points": "Punten"
 }

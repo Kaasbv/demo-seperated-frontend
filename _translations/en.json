@@ -31,9 +31,11 @@
   "changePassword": "Change Password",
   "invalidExtension": "Image filetype invalid!",
   "fileTooLarge": "File too large!",
+  "friendName": "Friend Name",
   "search": "Search",
+  "usersNotFound": "No users found",
+  "followers": "Followers",
   "searchPlaceholder": "Type here to search...",
-  "goalsNotFound": "No goals found",
   "total": "Total",
   "points": "Points"
 }

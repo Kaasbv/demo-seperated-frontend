@@ -105,28 +105,8 @@ function clickBack(e){
 }
 
 function showAddGoal(){
-  var modal = document.getElementById("addGoal");
-  var bodyCover = document.querySelector("#bodyCover");
-
-  bodyCover.classList.toggle("bodyOff");
-  modal.classList.toggle("addGoalContent");
+  showUnderModal();
   document.getElementById('parentId').value = currentGoal;
-
-    if (parseInt(modal.style.maxHeight) !== 0 && modal.style.maxHeight.length !== 0)  {
-        modal.style.maxHeight = 0 + "px";
-    } else {
-        modal.style.maxHeight = 400 + "px";
-    }
-}
-
-function removeAddScreen(){
-  var body = document.querySelector("#bodyCover");
-  var modal = document.getElementById("addGoal");
-
-  modal.classList.toggle("addGoalContent");
-  body.classList.toggle("bodyOff");
-  modal.style.maxHeight = 0;
-  document.getElementById("addGoalForm").reset();
 }
 
 function CreateGoal(event) {

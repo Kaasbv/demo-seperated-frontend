@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/index.js"></script>
   </head>
-  <body><div id="bodyCover" onclick="removeAddScreen()"></div>
+  <body>
+    <div class="bodyCover" onclick="removeUnderModal()"></div>
     <?php include_once(__DIR__ . "/include/header.php") ?>
 
     <div id="editBar">
@@ -18,7 +19,7 @@
       <div id="backButton"></div>
       <div id="header"></div>
       <div id="goals"></div>
-      <div id="addGoal">
+      <div class="undermodal" id="addGoal">
         <form id="addGoalForm" onsubmit="CreateGoal(event)">
           <input id="goalName" type="text" name="name" placeholder="<?= $ts->goalName?>" required/>
           <div id="goalType">

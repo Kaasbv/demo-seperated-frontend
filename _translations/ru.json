@@ -16,6 +16,7 @@
   "noGoalsFound":"Цели не найдены",
   "epic":"Эпики",
   "dateFormat":"дд-мм-гггг",
+  "followers": "Подписчики",
   "timeDisplay": "Отображение во времени",
   "home": "Домашняя страница",
   "results": "Результаты",
@@ -33,7 +34,8 @@
   "invalidExtension": "Некорректный тип файла!",
   "fileTooLarge": "Слишком большой файл!",
   "search": "Поиск",
-  "searchPlaceholder": "Печатайте здесь для поиска...",
+  "searchPlaceholder": "Печатайте здесь для поиска..",
+  "goalsNotFound": "Цели не найдены"
   "total": "Итого",
   "points": "Баллы"
 }

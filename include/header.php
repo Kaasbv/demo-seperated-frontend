@@ -5,6 +5,7 @@
       <li><a href="/"><?= $ts->home ?></a></li>
       <li><a href="/calender.php"><?= $ts->timeDisplay ?></a></li>
       <li><a href="/results.php"><?= $ts->results ?></a></li>
+      <li><a href="/followers.php"><?=$ts->followers ?></a></li>
       <li><a href="/search.php"><?= $ts->search ?></a></li>
     </ul>
     <div class="languageSelector">
