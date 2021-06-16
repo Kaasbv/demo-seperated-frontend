@@ -8,6 +8,8 @@
     <title>Goals</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="js/index.js"></script>
+
+    
   </head>
   <body><div id="bodyCover" onclick="removeAddScreen()"></div>
     <?php include_once(__DIR__ . "/include/header.php") ?>

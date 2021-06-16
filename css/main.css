@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'futurabold';
+  src: url('futura_bold-webfont.woff2') format('woff2'),
+       url('futura_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .bodyOff {
   position: absolute;
   left: 0;
@@ -52,7 +60,7 @@ main {
   color: #FF5A5F;
   margin:15%;
   margin-top: 10%;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'futurabold';
 }
 
 #goals > span {
@@ -152,7 +160,7 @@ main {
   margin-left:10%;
   margin-right:10%;
   margin-bottom: 5%;
-  font-family: 'Changa One', cursive;
+  font-family: 'futurabold';
   padding: 0;
   background: #F3FCFF;
   border-radius: 10px;
