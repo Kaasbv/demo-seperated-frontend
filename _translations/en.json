@@ -33,5 +33,6 @@
   "fileTooLarge": "File too large!",
   "friendName": "Friend Name",
   "search": "Search",
-  "usersNotFound": "No users found"
+  "usersNotFound": "No users found",
+  "followers": "Followers"
 }

@@ -33,5 +33,6 @@
   "fileTooLarge": "Het bestand is te groot!",
   "friendName": "Vriend Naam",
   "search": "Zoeken",
-  "usersNotFound": "Geen gebruikers gevonden"
+  "usersNotFound": "Geen gebruikers gevonden",
+  "followers": "Volgers"
 }
