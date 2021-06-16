@@ -31,7 +31,11 @@
     "changePassword": "Parola değiştir",
     "invalidExtension": "Görüntü dosya türü geçersiz!",
     "fileTooLarge": "Dosya boyutu çok büyük!",
+    "friendName": "Arkadaş ismi",
     "search": "Arama",
+    "usersNotFound": "Kulanıcılar bulunamadı",
+    "followers": "Takipçiler",
     "searchPlaceholder": "Aramak için buraya yazın...",
-    "goalsNotFound": "Goals bulunamadı"
+    "total": "Toplam",
+    "points": "Puan"
   }
