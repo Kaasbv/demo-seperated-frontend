@@ -15,7 +15,7 @@
   <main>
     <input id="term" type="text" placeholder="<?= $ts->searchPlaceholder ?>">
     <div id="goals">
-      <div class="center"><?= $ts->goalsNotFound ?></div>
+      <div class="center"><?= $ts->noGoalsFound ?></div>
     </div>
   </main>
 </body>
