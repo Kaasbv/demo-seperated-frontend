@@ -39,5 +39,12 @@
   "searchPlaceholder": "Type here to search...",
   "goalsNotFound": "No goals found",
   "total": "Total",
-  "points": "Points"
+  "points": "Points",
+  "cancel": "Cancel",
+  "addAttribute": "Add attribute",
+  "name": "Name",
+  "completeMainGoal": "Complete main goal",
+  "attributes": "Attributes",
+  "goalAttributes": "Goal attributes",
+  "description": "Description"
 }

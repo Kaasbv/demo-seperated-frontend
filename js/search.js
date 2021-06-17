@@ -31,7 +31,7 @@ function render() {
 
 
   if(goals.length === 0){
-    html = `<div class="center">${ts.goalsNotFound}</div>`;
+    html = `<div class="center">${ts.noGoalsFound}</div>`;
   }else{
     for (let goal of goals) {
       html += `
