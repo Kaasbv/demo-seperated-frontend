@@ -15,6 +15,7 @@
   "goals":"Goals",
   "noGoalsFound":"No goals found",
   "epic":"Epics",
+  "dateFormat": "dd-mm-yyyy",
   "timeDisplay": "Time Display",
   "home": "Home",
   "results": "Results",
@@ -36,6 +37,7 @@
   "usersNotFound": "No users found",
   "followers": "Followers",
   "searchPlaceholder": "Type here to search...",
+  "goalsNotFound": "No goals found",
   "total": "Total",
   "points": "Points"
 }

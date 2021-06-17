@@ -44,6 +44,7 @@ header h1{
   transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
+  font-family: 'Futura';
 }
 
 nav {
@@ -97,6 +98,7 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
+  font-family: 'Futura';
   color: inherit;
   text-decoration: none;
 }
@@ -177,6 +179,7 @@ nav > ul > li > a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  font-family: 'Futura';
 }
 
 #controls > .sideicon {
@@ -318,6 +321,7 @@ i {
   height: 30px;
   border-width: 0px;
   color:white;
+  font-family: 'Futura';
 }
 
 .btnf{
@@ -328,8 +332,10 @@ i {
   height: 30px;
   border-width: 0px;
   color:white;
+  font-family: 'Futura';
 }
 
 .center {
   text-align: center;
+  font-family: 'Futura';
 }
