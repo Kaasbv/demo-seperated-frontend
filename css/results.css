@@ -1,5 +1,7 @@
+
 #tabs {
   margin: 10px;
+  font-family: 'Futura';
 }
 
 #tabs > span {
@@ -20,10 +22,12 @@
   padding-left: 20px;
   padding-right: 20px;
   font-size: 18px;
+  font-family: 'Futura';
 }
 
 #goalTable thead {
   font-weight: 600;
+  font-family: 'Futura';
 }
 
 #goalTable, #goalTable thead {

@@ -15,6 +15,7 @@
     "goals":"Goals",
     "noGoalsFound":"Goals bulunamadı",
     "epic":"Epikler",
+    "dateFormat": "gg-aa-yyyy",
     "timeDisplay": "Zaman Göstergesi",
     "home": "Başlangıç",
     "results": "Sonuçlar",
@@ -36,6 +37,7 @@
     "usersNotFound": "Kulanıcılar bulunamadı",
     "followers": "Takipçiler",
     "searchPlaceholder": "Aramak için buraya yazın...",
+    "goalsNotFound": "Goals bulunamadı",
     "total": "Toplam",
     "points": "Puan"
   }
